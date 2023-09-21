@@ -40,7 +40,7 @@ const HeroSection = () => {
                             className="bg-green-600 hover:bg-green-500"
                             onClick={() => {
                                 downloadFile(
-                                    "http://localhost:3000/Jared_deMonteiro_Resume.pdf"
+                                    "https://jareddemonteiro.vercel.app/Jared_deMonteiro_Resume.pdf"
                                 );
                             }}
                         >
