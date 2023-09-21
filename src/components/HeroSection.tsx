@@ -36,7 +36,14 @@ const HeroSection = () => {
                         much more!
                     </p>
                     <div className="flex items-center">
-                        <Button className="bg-green-600 hover:bg-green-500">
+                        <Button
+                            className="bg-green-600 hover:bg-green-500"
+                            onClick={() => {
+                                downloadFile(
+                                    "http://localhost:3000/Jared_deMonteiro_Resume.pdf"
+                                );
+                            }}
+                        >
                             Resume{" "}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
