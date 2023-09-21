@@ -55,13 +55,25 @@ const Navbar: React.FC = () => {
                         }}
                     >
                         <div className="container mx-auto py-4">
-                            <Link href="" className="block text-white py-2">
+                            <Link
+                                href="#home"
+                                className="block text-white py-2"
+                                onClick={() => handleNavClick("home")}
+                            >
                                 Home
                             </Link>
-                            <Link href="" className="block text-white py-2">
+                            <Link
+                                href="#about"
+                                className="block text-white py-2"
+                                onClick={() => handleNavClick("about")}
+                            >
                                 About
                             </Link>
-                            <Link href="" className="block text-white py-2">
+                            <Link
+                                href="#projects"
+                                className="block text-white py-2"
+                                onClick={() => handleNavClick("projects")}
+                            >
                                 Projects
                             </Link>
                         </div>
