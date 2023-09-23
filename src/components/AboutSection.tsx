@@ -32,7 +32,7 @@ const AboutSection = () => {
                         </h1>
                         <p>
                             Hello, my name is Jared de Monteiro, and I am a
-                            Computer Scientist based in the San Fransisco Bay
+                            Computer Scientist based in the San Francisco Bay
                             Area. I am currently a Sophomore at the University
                             of Miami, pursuing a B.S. in Computer Science and
                             minoring in Mathematics.
@@ -53,8 +53,8 @@ const AboutSection = () => {
                             working with applications like Photoshop,
                             Illustrator, Figma, and After Effects for creative
                             projects. With my passion for creation, I have
-                            gotten into web development, creating sites that
-                            help people with their everyday problems.
+                            gotten into web development, using Next.js, creating
+                            sites that help people with their everyday problems.
                         </p>
                     </div>
                     <div className="md:w-1/2">
