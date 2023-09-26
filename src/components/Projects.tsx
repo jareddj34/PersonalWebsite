@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithubAlt } from "react-icons/fa";
+import PhotoAlbum from "react-photo-album";
 
 const projects = [
     {
@@ -31,6 +32,55 @@ const projects = [
         link: "https://ktpmiami.vercel.app/",
         piclink: "https://ktpmiami.vercel.app/",
     },
+];
+
+const figmas = [
+    {
+        name: "Travel Clock",
+        description:
+            "An app for users who travel on trains, and would like to sleep and get woken up at a specific time before their stop",
+        embed: (
+            <iframe
+                style={{
+                    border: "none",
+                    backgroundColor: "transparent",
+                }}
+                width={500}
+                height={650}
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3AIiNrftQ2OY0LivjxNLCA%2FTravel-Clock%3Ftype%3Ddesign%26node-id%3D1-2%26t%3D2NyecyiIQlSXjcSj-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign"
+                allowFullScreen
+            />
+        ),
+    },
+
+    {
+        name: "GoalBud",
+        description:
+            "An app for users who need help keeping track of their goals, as well as socialize with other with similar interests.",
+        embed: (
+            <iframe
+                style={{
+                    border: "none",
+                    backgroundColor: "transparent",
+                }}
+                width={500}
+                height={650}
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FhCBUVKAB7V2uYU25VARgvp%2FGoalBud%3Ftype%3Ddesign%26t%3D2VbiKM2i0LZ8Rbf3-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A16%26node-id%3D1-16%26mode%3Ddesign"
+                allowFullScreen
+            />
+        ),
+    },
+];
+
+const photos = [
+    { src: "/images/DD/Water Color RDJ.jpg", width: 280, height: 180 },
+
+    { src: "/images/DD/Double Exposure.png", width: 800, height: 800 },
+    { src: "/images/DD/Nature Watercolor.jpg", width: 1200, height: 1200 },
+];
+const photos2 = [
+    { src: "/images/DD/Postcard.png", width: 200, height: 150 },
+    { src: "/images/DD/Poster-Final.jpg", width: 130, height: 180 },
 ];
 
 const Projects = () => {
@@ -110,6 +160,46 @@ const Projects = () => {
                         </div>
                     );
                 })}
+            </div>
+            <div style={{ marginTop: "150px" }}>
+                <h1 className="text-center font-bold text-4xl mb-4">
+                    Some Figma Prototypes
+                </h1>
+                <p className="text-center">
+                    These are prototypes for apps, that aren't fully functional
+                    and don't have all the features.
+                </p>
+                <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
+                <div className="flex flex-col space-y-28">
+                    {figmas.map((figma, idx) => {
+                        return (
+                            <div key={idx}>
+                                <div className="flex flex-col md:flex-row md:space-x-12">
+                                    <div className="mt-14 md:w-1/2">
+                                        <h1 className="text-4xl font-bold mb-6">
+                                            {figma.name}
+                                        </h1>
+                                        <p className="text-2xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                            {figma.description}
+                                        </p>
+                                    </div>
+                                    <div className="mt-8 md:w-1/2">
+                                        {figma.embed}
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+
+            <div style={{ marginTop: "150px" }}>
+                <h1 className="text-center font-bold text-4xl mb-6">
+                    Some Digital Design Projects
+                    <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
+                </h1>
+                <PhotoAlbum photos={photos} layout="rows" />;
+                <PhotoAlbum photos={photos2} layout="rows" />;
             </div>
         </section>
     );
