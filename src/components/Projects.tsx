@@ -166,8 +166,8 @@ const Projects = () => {
                     Some Figma Prototypes
                 </h1>
                 <p className="text-center">
-                    These are prototypes for apps, that aren't fully functional
-                    and don't have all the features.
+                    These are prototypes for apps, that are not fully functional
+                    and do not have all the features yet.
                 </p>
                 <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
                 <div className="flex flex-col space-y-28">
