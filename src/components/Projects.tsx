@@ -13,6 +13,7 @@ const projects = [
         github: "https://github.com/jareddj34/CrabFit",
         link: "",
         piclink: "https://youtu.be/5Et-1yUL3K8",
+        youtubelink: "https://youtu.be/5Et-1yUL3K8",
     },
     {
         name: "Flower Adventures",
@@ -20,9 +21,9 @@ const projects = [
             "A video game I made for my Game Programming class. Focuses on a flower that fights bugs and traverses through obstacles. Created in Unity.",
         image: "/images/FlowerAdventures.png",
         github: "",
-        link: "https://www.youtube.com/watch?v=MElVeqwKQHM&ab_channel=JaredDeMonteiro",
-        piclink:
-            "https://www.youtube.com/watch?v=MElVeqwKQHM&ab_channel=JaredDeMonteiro",
+        link: "https://play.unity.com/mg/other/floweradventures",
+        piclink: "https://play.unity.com/mg/other/floweradventures",
+        youtubelink: "https://www.youtube.com/watch?v=MElVeqwKQHM",
     },
     {
         name: "Gambling Animation",
@@ -32,6 +33,7 @@ const projects = [
         github: "",
         link: "https://youtu.be/FMKl4py7z60",
         piclink: "https://youtu.be/FMKl4py7z60",
+        youtubelink: "https://youtu.be/FMKl4py7z60",
     },
     {
         name: "JamZ",
@@ -41,6 +43,7 @@ const projects = [
         github: "https://github.com/jareddj34/JamZ",
         link: "",
         piclink: "https://github.com/jareddj34/JamZ",
+        youtubelink: "",
     },
     {
         name: "Kappa Theta Pi Website",
@@ -50,6 +53,7 @@ const projects = [
         github: "",
         link: "https://ktpmiami.vercel.app/",
         piclink: "https://ktpmiami.vercel.app/",
+        youtubelink: "",
     },
 ];
 
@@ -158,8 +162,10 @@ const Projects = () => {
                                                 </Link>
                                             )}
 
-                                        {project.name ==
-                                            "Kappa Theta Pi Website" && (
+                                        {(project.name ===
+                                            "Kappa Theta Pi Website" ||
+                                            project.name ==
+                                                "Flower Adventures") && (
                                             <Link
                                                 href={project.link}
                                                 target="_blank"
@@ -174,6 +180,35 @@ const Projects = () => {
                                                     className="hover-float"
                                                 >
                                                     <path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path>
+                                                </svg>
+                                            </Link>
+                                        )}
+
+                                        {(project.name ===
+                                            "Flower Adventures" ||
+                                            project.name === "Crabfit" ||
+                                            project.name ===
+                                                "Gambling Animation") && (
+                                            <Link
+                                                href={project.youtubelink}
+                                                target="_blank"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="#000000"
+                                                    height="50px"
+                                                    width="50px"
+                                                    version="1.1"
+                                                    id="Layer_1"
+                                                    viewBox="0 0 310 310"
+                                                    className="hover-float"
+                                                >
+                                                    <g id="XMLID_822_">
+                                                        <path
+                                                            id="XMLID_823_"
+                                                            d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527   C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991   c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764   c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861   C204.394,157.263,202.325,160.684,199.021,162.41z"
+                                                        />
+                                                    </g>
                                                 </svg>
                                             </Link>
                                         )}
