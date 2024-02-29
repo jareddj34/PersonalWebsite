@@ -35,24 +35,24 @@ const projects = [
         piclink: "https://youtu.be/FMKl4py7z60",
         youtubelink: "https://youtu.be/FMKl4py7z60",
     },
-    {
-        name: "JamZ",
-        description:
-            "A document simplifier, making it easy for people to read long, confusing documents.",
-        image: "/images/JamZ.png",
-        github: "https://github.com/jareddj34/JamZ",
-        link: "",
-        piclink: "https://github.com/jareddj34/JamZ",
-        youtubelink: "",
-    },
+    // {
+    //     name: "JamZ",
+    //     description:
+    //         "A document simplifier, making it easy for people to read long, confusing documents.",
+    //     image: "/images/JamZ.png",
+    //     github: "https://github.com/jareddj34/JamZ",
+    //     link: "",
+    //     piclink: "https://github.com/jareddj34/JamZ",
+    //     youtubelink: "",
+    // },
     {
         name: "Kappa Theta Pi Website",
         description:
             "Website for Kappa Theta Pi, UMiami's first professional technology fraternity. Has info about events, members, etc.",
         image: "/images/KTP.png",
         github: "",
-        link: "https://ktpmiami.vercel.app/",
-        piclink: "https://ktpmiami.vercel.app/",
+        link: "https://ktpmiami.com",
+        piclink: "https://ktpmiami.com",
         youtubelink: "",
     },
 ];
@@ -218,14 +218,35 @@ const Projects = () => {
                         </div>
                     );
                 })}
+
+                {/* For the blender gif */}
+                <div className="flex flex-col md:flex-row md:space-x-12">
+                    <div className="mt-8 md:w-1/2">
+                        <Image
+                            src="/images/RoomAnim.gif"
+                            alt=""
+                            width={1000}
+                            height={1000}
+                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                        />
+                    </div>
+                    <div className="mt-12 md:w-1/2">
+                        <h1 className="text-4xl font-bold mb-6">
+                            Blender Room Animation
+                        </h1>
+                        <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                            A small animation I made in Blender, showing a room
+                            model that I created.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div style={{ marginTop: "150px" }}>
                 <h1 className="text-center font-bold text-4xl mb-4">
-                    Some Figma Prototypes
+                    Figma Prototypes
                 </h1>
                 <p className="text-center">
-                    These are prototypes for apps, that are not fully functional
-                    and do not have all the features yet.
+                    These are prototypes for some app ideas that I had.
                 </p>
                 <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
                 <div className="flex flex-col space-y-28">
@@ -253,7 +274,7 @@ const Projects = () => {
 
             <div style={{ marginTop: "150px" }}>
                 <h1 className="text-center font-bold text-4xl mb-6">
-                    Some Digital Design Projects
+                    Digital Design Projects
                     <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
                 </h1>
                 <PhotoAlbum photos={photos} layout="rows" />;
