@@ -16,6 +16,26 @@ const projects = [
         youtubelink: "https://youtu.be/5Et-1yUL3K8",
     },
     {
+        name: "Kappa Theta Pi Website",
+        description:
+            "Website for Kappa Theta Pi, UMiami's first professional technology fraternity. Has info about events, members, etc.",
+        image: "/images/KTP.png",
+        github: "https://github.com/jareddj34/ktpmiami",
+        link: "https://ktpmiami.com",
+        piclink: "https://ktpmiami.com",
+        youtubelink: "",
+    },
+    {
+        name: "OriginPC Custom PC Builder Page",
+        description:
+            "One of the web pages I made for OriginPC, showcasing our customizable aspects of our gaming PCs.",
+        image: "/images/OriginPC.png",
+        github: "",
+        link: "https://www.originpc.com/gaming/desktops/custom-pc-builder/",
+        piclink: "https://www.originpc.com/gaming/desktops/custom-pc-builder/",
+        youtubelink: "",
+    },
+    {
         name: "Flower Adventures",
         description:
             "A video game I made for my Game Programming class. Focuses on a flower that fights bugs and traverses through obstacles. Created in Unity.",
@@ -45,16 +65,6 @@ const projects = [
     //     piclink: "https://github.com/jareddj34/JamZ",
     //     youtubelink: "",
     // },
-    {
-        name: "Kappa Theta Pi Website",
-        description:
-            "Website for Kappa Theta Pi, UMiami's first professional technology fraternity. Has info about events, members, etc.",
-        image: "/images/KTP.png",
-        github: "",
-        link: "https://ktpmiami.com",
-        piclink: "https://ktpmiami.com",
-        youtubelink: "",
-    },
 ];
 
 const figmas = [
@@ -141,7 +151,10 @@ const Projects = () => {
                                         {project.description}
                                     </p>
                                     <div className="flex flex-row space-x-4 ">
-                                        {project.name != "Flower Adventures" &&
+                                        {project.name !=
+                                            "OriginPC Custom PC Builder Page" &&
+                                            project.name !=
+                                                "Flower Adventures" &&
                                             project.name !=
                                                 "Gambling Animation" && (
                                                 <Link
@@ -163,7 +176,9 @@ const Projects = () => {
                                             )}
 
                                         {(project.name ===
-                                            "Kappa Theta Pi Website" ||
+                                            "OriginPC Custom PC Builder Page" ||
+                                            project.name ===
+                                                "Kappa Theta Pi Website" ||
                                             project.name ==
                                                 "Flower Adventures") && (
                                             <Link
