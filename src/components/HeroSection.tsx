@@ -41,7 +41,7 @@ const HeroSection = () => {
                             className="bg-green-600 hover:bg-green-500"
                             onClick={() => {
                                 downloadFile(
-                                    "https://jareddemonteiro.vercel.app/Jared_deMonteiro_Resume_1_24.pdf"
+                                    "https://jareddemonteiro.vercel.app/Jared_deMonteiro_Resume_10_18.pdf"
                                 );
                             }}
                         >
