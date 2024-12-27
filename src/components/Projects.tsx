@@ -233,9 +233,43 @@ const Projects = () => {
                         </div>
                     );
                 })}
-
-                {/* For the blender gif */}
-                <div className="flex flex-col md:flex-row md:space-x-12">
+            </div>
+            {/* For the blender gif */}
+            <div style={{ marginTop: "150px" }}>
+                <div className="mt-12 text-center">
+                    <h1 className="text-4xl font-bold mb-6">
+                        Blender Animations
+                    </h1>
+                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                        Animations that I created in Blender, showcasing
+                        isometric rooms.
+                    </p>
+                </div>
+                <div className="flex flex-col items-center md:flex-row md:justify-center md:space-x-8">
+                    <Image
+                        src="/images/Bedroom.gif"
+                        alt=""
+                        width={500}
+                        height={500}
+                        className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                    />
+                    <Image
+                        src="/images/NewBedroom.gif"
+                        alt=""
+                        width={500}
+                        height={500}
+                        className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                    />
+                    <Image
+                        src="/images/LivingRoom.gif"
+                        alt=""
+                        width={500}
+                        height={500}
+                        className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                    />
+                </div>
+            </div>
+            {/* <div className="flex flex-col md:flex-row md:space-x-12">
                     <div className="mt-8 md:w-1/2">
                         <Image
                             src="/images/RoomAnim.gif"
@@ -254,8 +288,7 @@ const Projects = () => {
                             model that I created.
                         </p>
                     </div>
-                </div>
-            </div>
+                </div> */}
             <div style={{ marginTop: "150px" }}>
                 <h1 className="text-center font-bold text-4xl mb-4">
                     Figma Prototypes
