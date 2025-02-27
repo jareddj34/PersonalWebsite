@@ -70,6 +70,13 @@ const Navbar: React.FC = () => {
                                 About
                             </Link>
                             <Link
+                                href="#blog"
+                                className="block text-white py-2"
+                                onClick={() => handleNavClick("blog")}
+                            >
+                                Blog
+                            </Link>
+                            <Link
                                 href="#experience"
                                 className="block text-white py-2"
                                 onClick={() => handleNavClick("experience")}
@@ -102,6 +109,13 @@ const Navbar: React.FC = () => {
                         style={{ fontSize: "22px" }}
                     >
                         About
+                    </Link>
+                    <Link
+                        href="#blog"
+                        onClick={() => handleNavClick("blog")}
+                        style={{ fontSize: "22px" }}
+                    >
+                        Blog
                     </Link>
                     <Link
                         href="#experience"
