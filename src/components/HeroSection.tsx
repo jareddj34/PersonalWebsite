@@ -9,7 +9,7 @@ const HeroSection = () => {
     const downloadFile = (url: any) => {
         const aTag = document.createElement("a");
         aTag.href = url;
-        aTag.setAttribute("download", "Jared_deMonteiro_Resume_1_24.pdf");
+        aTag.setAttribute("download", "Jared_deMonteiro_Resume_3_24.pdf");
         document.body.appendChild(aTag);
         aTag.click();
         aTag.remove();
@@ -41,7 +41,7 @@ const HeroSection = () => {
                             className="bg-green-600 hover:bg-green-500"
                             onClick={() => {
                                 downloadFile(
-                                    "https://jareddemonteiro.vercel.app/Jared_deMonteiro_Resume_10_18.pdf"
+                                    "https://jareddemonteiro.vercel.app/Jared_deMonteiro_Resume_3_24.pdf"
                                 );
                             }}
                         >
