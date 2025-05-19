@@ -247,22 +247,22 @@ const Projects = () => {
                 </div>
                 <div className="flex flex-col items-center md:flex-row md:justify-center md:space-x-8">
                     <Image
-                        src="/images/Bedroom.gif"
-                        alt=""
+                        src="/images/blender/CatInBedroom.gif"
+                        alt="CatInBedroom Animation"
                         width={500}
                         height={500}
                         className="rounded-xl shadow-xl hover:opacity-70 hover-float"
                     />
                     <Image
-                        src="/images/NewBedroom.gif"
-                        alt=""
+                        src="/images/blender/NewBedroom.gif"
+                        alt="NewBedroom Animation"
                         width={500}
                         height={500}
                         className="rounded-xl shadow-xl hover:opacity-70 hover-float"
                     />
                     <Image
-                        src="/images/LivingRoom.gif"
-                        alt=""
+                        src="/images/blender/LivingRoom.gif"
+                        alt="LivingRoom Animation"
                         width={500}
                         height={500}
                         className="rounded-xl shadow-xl hover:opacity-70 hover-float"
