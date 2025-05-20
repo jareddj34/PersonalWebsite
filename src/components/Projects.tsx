@@ -246,27 +246,33 @@ const Projects = () => {
                     </p>
                 </div>
                 <div className="flex flex-col items-center md:flex-row md:justify-center md:space-x-8">
-                    <Image
-                        src="/images/blender/CatInBedroom.gif"
-                        alt="CatInBedroom Animation"
-                        width={500}
-                        height={500}
-                        className="rounded-xl shadow-xl hover:opacity-70 hover-float"
-                    />
-                    <Image
-                        src="/images/blender/NewBedroom.gif"
-                        alt="NewBedroom Animation"
-                        width={500}
-                        height={500}
-                        className="rounded-xl shadow-xl hover:opacity-70 hover-float"
-                    />
-                    <Image
-                        src="/images/blender/LivingRoom.gif"
-                        alt="LivingRoom Animation"
-                        width={500}
-                        height={500}
-                        className="rounded-xl shadow-xl hover:opacity-70 hover-float"
-                    />
+                    <Link href="https://www.youtube.com/shorts/uBzHTZ0ClMY" target="_blank">
+                        <Image
+                            src="/images/blender/CatInBedroom.gif"
+                            alt="Cat In Bedroom Animation"
+                            width={500}
+                            height={500}
+                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                        />
+                    </Link>
+                    <Link href="https://www.youtube.com/shorts/s-HQNWTM_Wg" target="_blank">
+                        <Image
+                            src="/images/blender/NewBedroom.gif"
+                            alt="New Living Room Animation"
+                            width={500}
+                            height={500}
+                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                        />
+                    </Link>
+                    <Link href="https://www.youtube.com/shorts/89Q6NvtoMKo" target="_blank">
+                        <Image
+                            src="/images/blender/LivingRoom.gif"
+                            alt="Living Room Animation"
+                            width={500}
+                            height={500}
+                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                        />
+                    </Link>
                 </div>
             </div>
             {/* <div className="flex flex-col md:flex-row md:space-x-12">
