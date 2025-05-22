@@ -241,17 +241,16 @@ const Projects = () => {
                         Blender Animations
                     </h1>
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                        Animations that I created in Blender, showcasing
-                        isometric rooms.
+                        Animations that I created in Blender.
                     </p>
                 </div>
-                <div className="flex flex-col items-center md:flex-row md:justify-center md:space-x-8">
+                <div className="flex flex-wrap justify-center gap-8"> 
                     <Link href="https://www.youtube.com/shorts/uBzHTZ0ClMY" target="_blank">
                         <Image
                             src="/images/blender/CatInBedroom.gif"
                             alt="Cat In Bedroom Animation"
-                            width={500}
-                            height={500}
+                            width={350}
+                            height={350}
                             className="rounded-xl shadow-xl hover:opacity-70 hover-float"
                         />
                     </Link>
@@ -259,8 +258,8 @@ const Projects = () => {
                         <Image
                             src="/images/blender/NewBedroom.gif"
                             alt="New Living Room Animation"
-                            width={500}
-                            height={500}
+                            width={350}
+                            height={350}
                             className="rounded-xl shadow-xl hover:opacity-70 hover-float"
                         />
                     </Link>
@@ -268,7 +267,16 @@ const Projects = () => {
                         <Image
                             src="/images/blender/LivingRoom.gif"
                             alt="Living Room Animation"
-                            width={500}
+                            width={350}
+                            height={350}
+                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                        />
+                    </Link>
+                    <Link href="https://www.youtube.com/watch?v=pONAtAiO5_o&pp=ygURamFyZWQgZGUgbW9udGVpcm8%3D" target="_blank">
+                        <Image
+                            src="/images/blender/rubikscubewalking.gif"
+                            alt="Rubik's Cube Walking Animation"
+                            width={800}
                             height={500}
                             className="rounded-xl shadow-xl hover:opacity-70 hover-float"
                         />
