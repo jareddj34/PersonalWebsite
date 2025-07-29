@@ -23,6 +23,26 @@ const posts = [
         pic: "/images/xrday.jpg",
         alt: "XR Day",
     },
+    {
+        title: "Tests for Cognitive Impairment",
+        date: "Spring 2025",
+        description: (
+            <>
+                I was lucky enough to be a part of a research project at the University of Miami, partnering with Dr. Ubbo Visser. The objective of the project was to create digital tests, to detect whether the user has any signs of minor cognitive impariment or Alzheimer's disease. Variations of these tests have already been worked on, including a real-world test, and a online test that can be taken on the copmuter. The purpose of this project is to produce another variation of this test, where the users can take it in a VR headest. This will give the exams a more immersive element to it, while also allowing it to be digitalized. It was such a great experience working on this project, allowing me to demonstrate my skills in Unity VR, and collaborate with talented individuals like Dr. Visser and Dr. Lisetti. The documentation for the project can be viewed{" "}
+                <a 
+                    href="https://docs.google.com/document/d/1cCCPMQl8vztD1VaHMsl3QkHKZ9jIcGALblYXA9DDlik/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                >
+                    here
+                </a>
+                . I am excited to continue this project, and refine it as time goes on!
+            </>
+        ),
+        pic: "/images/VisserProjectThumbnail.png",
+        alt: "Tests for Cognitive Impairment",
+    },
 ];
 
 export default function Blog() {

@@ -36,9 +36,9 @@ const AboutSection = () => {
                         <p>
                             Hello, my name is Jared de Monteiro, and I am a
                             Computer Scientist based in the San Francisco Bay
-                            Area. I am currently a Sophomore at the University
+                            Area. I am currently a senior at the University
                             of Miami, pursuing a B.S. in Computer Science and
-                            minoring in Mathematics.
+                            minoring in Mathematics and Interactive Media.
                         </p>
                         <br />
                         <p>
