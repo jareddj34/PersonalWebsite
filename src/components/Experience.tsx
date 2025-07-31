@@ -4,7 +4,7 @@ import Link from "next/link";
 const jobs = [
     {
         name: "Virtual Experiences Simulation Lab",
-        title: "Unity Developer",
+        title: "Lead Developer",
         date: "November 2024 - Present",
         description:
             "Develop XR games/projects in Unity, which have world impacts that span from healthcare training, education, and narrative storytelling. Work with 3D modelers, UI Designers, and other Unity Developers to create final products.",
