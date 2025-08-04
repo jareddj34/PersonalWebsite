@@ -266,8 +266,8 @@ const Projects = () => {
                                 Cat In Bedroom
                             </h2>
                             <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                                Being one of the first models that I've created in Blender, I decided to improve upon it by animating the objects to fly in the screen, similar to the Airbnb commericials. The cat is also the first character
-                                I ever modeled and rigged, following Joey Carlino's Youtube tutorials.
+                                Being one of the first models that I&apos;ve created in Blender, I decided to improve upon it by animating the objects to fly in the screen, similar to the Airbnb commericials. The cat is also the first character
+                                I ever modeled and rigged, following Joey Carlino&apos;s Youtube tutorials.
                             </p>
                             <Link href="https://www.youtube.com/shorts/uBzHTZ0ClMY" target="_blank">
                                 <svg
@@ -343,7 +343,7 @@ const Projects = () => {
                                 Catalogue Living Room
                             </h2>
                             <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                                I've always imagined this living room being shown in a catalogue of home decor inspiration. Again, another Airbnb style animation.
+                                I&apos;ve always imagined this living room being shown in a catalogue of home decor inspiration. Again, another Airbnb style animation.
                             </p>
                             <Link href="https://www.youtube.com/shorts/89Q6NvtoMKo" target="_blank">
                                 <svg
@@ -378,10 +378,10 @@ const Projects = () => {
                         </PopoverTrigger>
                         <PopoverContent className="w-80">
                             <h2 className="text-2xl font-bold mb-6">
-                                Rubik's Cube Walking
+                                Rubik&apos;s Cube Walking
                             </h2>
                             <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                                Solving Rubik's Cubes is one of my longest and most cherrished hobbies. Having a collection of over 100 cubes, I knew I had to incorporate one of the things I identify with into my modeling and animation.
+                                Solving Rubik&apos;s Cubes is one of my longest and most cherrished hobbies. Having a collection of over 100 cubes, I knew I had to incorporate one of the things I identify with into my modeling and animation.
                             </p>
                             <Link
                                 href="https://www.youtube.com/watch?v=pONAtAiO5_o&pp=ygURamFyZWQgZGUgbW9udGVpcm8%3D"
