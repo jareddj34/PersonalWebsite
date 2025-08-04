@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithubAlt } from "react-icons/fa";
 import PhotoAlbum from "react-photo-album";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+import { Button } from "./ui/button";
 
 const projects = [
     {
@@ -245,42 +251,181 @@ const Projects = () => {
                     </p>
                 </div>
                 <div className="flex flex-wrap justify-center gap-8"> 
-                    <Link href="https://www.youtube.com/shorts/uBzHTZ0ClMY" target="_blank">
-                        <Image
-                            src="/images/blender/CatInBedroom.gif"
-                            alt="Cat In Bedroom Animation"
-                            width={350}
-                            height={350}
-                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
-                        />
-                    </Link>
-                    <Link href="https://www.youtube.com/shorts/s-HQNWTM_Wg" target="_blank">
-                        <Image
-                            src="/images/blender/NewBedroom.gif"
-                            alt="New Living Room Animation"
-                            width={350}
-                            height={350}
-                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
-                        />
-                    </Link>
-                    <Link href="https://www.youtube.com/shorts/89Q6NvtoMKo" target="_blank">
-                        <Image
-                            src="/images/blender/LivingRoom.gif"
-                            alt="Living Room Animation"
-                            width={350}
-                            height={350}
-                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
-                        />
-                    </Link>
-                    <Link href="https://www.youtube.com/watch?v=pONAtAiO5_o&pp=ygURamFyZWQgZGUgbW9udGVpcm8%3D" target="_blank">
-                        <Image
-                            src="/images/blender/rubikscubewalking.gif"
-                            alt="Rubik's Cube Walking Animation"
-                            width={800}
-                            height={500}
-                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
-                        />
-                    </Link>
+                    <Popover>
+                        <PopoverTrigger>
+                            <Image
+                                src="/images/blender/CatInBedroom.gif"
+                                alt="Cat In Bedroom Animation"
+                                width={350}
+                                height={350}
+                                className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                            />
+                        </PopoverTrigger>
+                        <PopoverContent className="w-80">
+                            <h2 className="text-2xl font-bold mb-6">
+                                Cat In Bedroom
+                            </h2>
+                            <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                Being one of the first models that I've created in Blender, I decided to improve upon it by animating the objects to fly in the screen, similar to the Airbnb commericials. The cat is also the first character
+                                I ever modeled and rigged, following Joey Carlino's Youtube tutorials.
+                            </p>
+                            <Link href="https://www.youtube.com/shorts/uBzHTZ0ClMY" target="_blank">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="#000000"
+                                    height="50px"
+                                    width="50px"
+                                    version="1.1"
+                                    id="Layer_1"
+                                    viewBox="0 0 310 310"
+                                    className="hover-float"
+                                >
+                                    <g id="XMLID_822_">
+                                        <path
+                                            id="XMLID_823_"
+                                            d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527   C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991   c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764   c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861   C204.394,157.263,202.325,160.684,199.021,162.41z"
+                                        />
+                                    </g>
+                                </svg>
+                            </Link>
+                        </PopoverContent>
+                    </Popover>
+                    <Popover>
+                        <PopoverTrigger>
+                            <Image
+                                src="/images/blender/NewBedroom.gif"
+                                alt="New Living Room Animation"
+                                width={350}
+                                height={350}
+                                className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                            />
+                        </PopoverTrigger>
+                        <PopoverContent className="w-80">
+                            <h2 className="text-2xl font-bold mb-6">
+                                Vibrant Living Room
+                            </h2>
+                            <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                A colorful and vibrant isometric living room, with the objects soaring into the scene in unique ways.
+                            </p>
+                            <Link href="https://www.youtube.com/shorts/s-HQNWTM_Wg" target="_blank">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="#000000"
+                                    height="50px"
+                                    width="50px"
+                                    version="1.1"
+                                    id="Layer_1"
+                                    viewBox="0 0 310 310"
+                                    className="hover-float"
+                                >
+                                    <g id="XMLID_822_">
+                                        <path
+                                            id="XMLID_823_"
+                                            d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527   C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991   c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764   c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861   C204.394,157.263,202.325,160.684,199.021,162.41z"
+                                        />
+                                    </g>
+                                </svg>
+                            </Link>
+                        </PopoverContent>
+                    </Popover>
+                    <Popover>
+                        <PopoverTrigger>
+                            <Image
+                                src="/images/blender/LivingRoom.gif"
+                                alt="Living Room Animation"
+                                width={350}
+                                height={350}
+                                className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                            />
+                        </PopoverTrigger>
+                        <PopoverContent className="w-80">
+                            <h2 className="text-2xl font-bold mb-6">
+                                Catalogue Living Room
+                            </h2>
+                            <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                I've always imagined this living room being shown in a catalogue of home decor inspiration. Again, another Airbnb style animation.
+                            </p>
+                            <Link href="https://www.youtube.com/shorts/89Q6NvtoMKo" target="_blank">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="#000000"
+                                    height="50px"
+                                    width="50px"
+                                    version="1.1"
+                                    id="Layer_1"
+                                    viewBox="0 0 310 310"
+                                    className="hover-float"
+                                >
+                                    <g id="XMLID_822_">
+                                        <path
+                                            id="XMLID_823_"
+                                            d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527   C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991   c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764   c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861   C204.394,157.263,202.325,160.684,199.021,162.41z"
+                                        />
+                                    </g>
+                                </svg>
+                            </Link>
+                        </PopoverContent>
+                    </Popover>
+                    <Popover>
+                        <PopoverTrigger>
+                            <Image
+                                src="/images/blender/rubikscubewalking.gif"
+                                alt="Rubik's Cube Walking Animation"
+                                width={550}
+                                height={500}
+                                className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                            />
+                        </PopoverTrigger>
+                        <PopoverContent className="w-80">
+                            <h2 className="text-2xl font-bold mb-6">
+                                Rubik's Cube Walking
+                            </h2>
+                            <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                Solving Rubik's Cubes is one of my longest and most cherrished hobbies. Having a collection of over 100 cubes, I knew I had to incorporate one of the things I identify with into my modeling and animation.
+                            </p>
+                            <Link
+                                href="https://www.youtube.com/watch?v=pONAtAiO5_o&pp=ygURamFyZWQgZGUgbW9udGVpcm8%3D"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="#000000"
+                                    height="50px"
+                                    width="50px"
+                                    version="1.1"
+                                    id="Layer_1"
+                                    viewBox="0 0 310 310"
+                                    className="hover-float"
+                                >
+                                    <g id="XMLID_822_">
+                                        <path
+                                            id="XMLID_823_"
+                                            d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527   C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991   c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764   c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861   C204.394,157.263,202.325,160.684,199.021,162.41z"
+                                        />
+                                    </g>
+                                </svg>
+                            </Link>
+                        </PopoverContent>
+                    </Popover>
+                    <Popover>
+                        <PopoverTrigger>
+                            <Image
+                                src="/images/blender/typewriterwalkinggif.gif"
+                                alt="Typewriter Walking Animation"
+                                width={550}
+                                height={500}
+                                className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                            />
+                        </PopoverTrigger>
+                        <PopoverContent className="w-80">
+                            <h2 className="text-2xl font-bold mb-6">
+                                Typewriter Walking
+                            </h2>
+                            <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                I found inspiration for this animation while browsing an art museum in Sedona, Arizona. There were metal sculptures of common antiques, that were morphed into characters with arms and legs.
+                            </p>
+                        </PopoverContent>
+                    </Popover>
                 </div>
             </div>
             {/* <div className="flex flex-col md:flex-row md:space-x-12">
