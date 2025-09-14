@@ -75,6 +75,36 @@ const projects = [
 
 const figmas = [
     {
+        name: "Laundr",
+        description: (
+            <>
+                An app designed for college students in dorm who want to have a better experience with their laundry. This app would track all the laundry machines, and show the available and in-use machines.{" "}
+                
+                <p><a
+                    href="https://drive.google.com/file/d/1PoUs1s3bmBpUZK3hvF54pgGjlyIudiLO/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                >
+                    Check out the case study.
+                </a></p>
+            </>
+        ),
+        image: "/images/LaundrCaseStudyThumbnail.png",
+        embed: (
+            <iframe
+                style={{
+                    border: "none",
+                    backgroundColor: "transparent",
+                }}
+                width={500}
+                height={650}
+                src="https://embed.figma.com/proto/mJzo4qeJOG2kd87zWquEJf/Low-Fidelity-Laundr-App?node-id=341-1040&p=f&scaling=scale-down&content-scaling=fixed&page-id=341%3A700&starting-point-node-id=341%3A1040&embed-host=share"
+                allowFullScreen
+            />
+        ),
+    },
+    {
         name: "Travel Clock",
         description:
             "An app for users who travel on trains, and would like to sleep and get woken up at a specific time before their stop",
@@ -468,6 +498,17 @@ const Projects = () => {
                                         <p className="text-2xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                                             {figma.description}
                                         </p>
+                                        {figma.image && (
+                                            <a href="https://drive.google.com/file/d/1PoUs1s3bmBpUZK3hvF54pgGjlyIudiLO/view?usp=sharing" target="_blank">
+                                                <Image
+                                                    src={figma.image}
+                                                    alt={figma.name}
+                                                    width={500}
+                                                    height={500}
+                                                    className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                                                />
+                                            </a>
+                                        )}
                                     </div>
                                     <div className="mt-8 md:w-1/2">
                                         {figma.embed}
