@@ -21,14 +21,14 @@ const Navbar: React.FC = () => {
     return (
         <div
             className="fixed top-0 inset-x-0 h-15 border-b border-zinc-300 z-[10] py-3 bg-gray-900/5 object-cover shadow-xl"
-            style={{ backgroundColor: "#218a39" }}
+            style={{ backgroundColor: "#d8d8d8ff" }}
         >
             <div className="container max-w-7xl h-full mx-auto flex items-center justify-between gap-2">
                 {/* Logo (Kappa Theta Pi) */}
                 <div className="flex items-center">
                     <Link href="/">
                         <h1
-                            className="text-white font-medium px-6"
+                            className="text-black font-bold px-6"
                             style={{ fontSize: "25px" }}
                         >
                             Jared de Monteiro
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center">
                     <button
                         onClick={toggleMobileMenu}
-                        className="md:hidden text-white text-xl focus:outline-none px-6"
+                        className="md:hidden text-black text-xl focus:outline-none px-6"
                     >
                         {isMobileMenuOpen ? "✕" : "☰"}
                     </button>
@@ -51,41 +51,41 @@ const Navbar: React.FC = () => {
                     <div
                         className="md:hidden absolute top-14 inset-x-0 px-6"
                         style={{
-                            backgroundColor: "#218a39",
+                            backgroundColor: "#d8d8d8ff",
                         }}
                     >
                         <div className="container mx-auto py-4">
                             <Link
                                 href="#home"
-                                className="block text-white py-2"
+                                className="block text-black py-2"
                                 onClick={() => handleNavClick("home")}
                             >
                                 Home
                             </Link>
                             <Link
                                 href="#about"
-                                className="block text-white py-2"
+                                className="block text-black py-2"
                                 onClick={() => handleNavClick("about")}
                             >
                                 About
                             </Link>
                             <Link
                                 href="#blog"
-                                className="block text-white py-2"
+                                className="block text-black py-2"
                                 onClick={() => handleNavClick("blog")}
                             >
                                 Blog
                             </Link>
                             <Link
                                 href="#experience"
-                                className="block text-white py-2"
+                                className="block text-black py-2"
                                 onClick={() => handleNavClick("experience")}
                             >
                                 Experience
                             </Link>
                             <Link
                                 href="#projects"
-                                className="block text-white py-2"
+                                className="block text-black py-2"
                                 onClick={() => handleNavClick("projects")}
                             >
                                 Projects
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
                 )}
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-right justify-between gap-8 text-white">
+                <div className="hidden md:flex items-right justify-between gap-8 text-black font-medium">
                     <Link
                         href="#home"
                         onClick={() => handleNavClick("home")}

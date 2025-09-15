@@ -78,8 +78,8 @@ const figmas = [
         name: "Laundr",
         description: (
             <>
-                An app designed for college students in dorm who want to have a better experience with their laundry. This app would track all the laundry machines, and show the available and in-use machines.{" "}
-                
+                <p>An app designed for college students in dorm who want to have a better experience with their laundry. This app would track all the laundry machines, and show the available and in-use machines.{" "}
+                </p>
                 <p><a
                     href="https://drive.google.com/file/d/1PoUs1s3bmBpUZK3hvF54pgGjlyIudiLO/view?usp=sharing"
                     target="_blank"
