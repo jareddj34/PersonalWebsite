@@ -47,8 +47,8 @@ const projects = [
             "A video game I made for my Game Programming class. Focuses on a flower that fights bugs and traverses through obstacles. Created in Unity.",
         image: "/images/FlowerAdventures.png",
         github: "",
-        link: "https://play.unity.com/mg/other/floweradventures",
-        piclink: "https://play.unity.com/mg/other/floweradventures",
+        link: "https://play.unity.com/en/games/258d4340-f91a-4763-8139-aa914a298d9f/webgl-builds",
+        piclink: "https://play.unity.com/en/games/258d4340-f91a-4763-8139-aa914a298d9f/webgl-builds",
         youtubelink: "https://www.youtube.com/watch?v=MElVeqwKQHM",
     },
     {
