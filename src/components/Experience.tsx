@@ -5,9 +5,21 @@ const jobs = [
     {
         name: "Virtual Experiences Simulation Lab",
         title: "Lead Developer",
-        date: "November 2024 - Present",
+        date: "November 2023 - Present",
         description:
-            "Develop XR games/projects in Unity, which have world impacts that span from healthcare training, education, and narrative storytelling. Work with 3D modelers, UI Designers, and other Unity Developers to create final products.",
+            <>
+            <ul className="list-disc list-inside">
+                <li>
+                    Developed XR projects in Unity (C#), which have world impacts that span from healthcare training, education, and narrative storytelling
+                </li>
+                <li>
+                    Implemented gameplay systems, including player movement, interactable objects, and NPC AI movement
+                </li>
+                <li>
+                    Led teams of 3D modelers, UI/UX Designers, and other Unity developers to deliver fully deployable projects
+                </li>
+            </ul>
+            </>,
         pic: "/images/vesl.png",
         link: "https://xr.miami.edu/labs/the-vesl/index.html",
     },
@@ -16,27 +28,67 @@ const jobs = [
         title: "Web Design Intern",
         date: "May 2024 - December 2024",
         description:
-            "Updated content on the website using Photoshop, Illustrator, and HTML. Worked with marketing team to create graphics for social media posts. Designed custom UV prints for a variety of products including: PCs, keyboard, and mice.",
+            <>
+                <ul className="list-disc list-inside">
+                    <li>
+                        Updated website content using JavaScript, HTML, and CSS, improving UX across multiple product pages
+                    </li>
+                    <li>
+                        Designed custom UV prints for PC cases using Photoshop and Illustrator, contributing to product personalization
+                    </li>
+                    <li>
+                        Created promotional graphics for social media campaigns, increasing user engagement
+                    </li>
+                </ul>
+            </>,
         pic: "/images/origin.png",
         link: "https://www.originpc.com/",
+    },
+    
+    {
+        name: "Kappa Theta Pi",
+        title: "Co-Founder, VP of Technical Development, Director of Website & Technical Operations",
+        date: "August 2023 - Present",
+        description:
+            <>
+                <ul className="list-disc list-inside">
+                    <li>
+                        Co-founded first ever professional technology fraternity at the Univesrity of Miami
+                    </li>
+                    <li>
+                        Developed website using Next.js, displaying general information on the fraternity, events, and members
+                    </li>
+                    <li>
+                        Arrange workshops to improve members technical skills in coding, design, etc.
+                    </li>
+                </ul>
+            </>,
+        pic: "/images/ktplogo.png",
+        link: "https://www.ktpmiami.com/",
     },
     {
         name: "iD Tech",
         title: "Instructor",
         date: "May - July 2025",
         description:
-            "Taught and mentored students in an engaging, project-based environment. Delivered hands-on instruction in: Unity (C# programming, 3D game development, physics-based mechanics), Roblox Studio (scripting with Lua, game design fundamentals, publishing projects), Virtual Reality (navigating through Meta Quest headsets, game design principles for VR-based projects).",
+            <>
+                <ul className="list-disc list-inside">
+                    <li>
+                        Taught and mentored students in an engaging, project-based environment
+                    </li>
+                    <li>
+                        Delivered hands-on instruction in Unity (C# programming, 3D game development, physics-based mechanics)
+                    </li>
+                    <li>
+                        Taught Roblox Studio (scripting with Lua, game design fundamentals, publishing projects)
+                    </li>
+                    <li>
+                        Instructed on Virtual Reality (Meta Quest headsets, game design principles for VR-based projects)
+                    </li>
+                </ul>
+            </>,
         pic: "/images/idtechlogo.png",
         link: "https://www.idtech.com/",
-    },
-    {
-        name: "Kappa Theta Pi",
-        title: "Co-Founder, VP of Technical Development, Director of Website",
-        date: "August 2023 - Present",
-        description:
-            "Developed website using Next.js, displaying general information on the fraternity, events, and members Arrange workshops to improve members technical skills in coding, design, etc.",
-        pic: "/images/ktplogo.png",
-        link: "https://www.ktpmiami.com/",
     },
 ];
 

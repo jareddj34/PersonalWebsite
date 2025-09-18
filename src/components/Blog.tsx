@@ -65,7 +65,7 @@ export default function Blog() {
                                             <img
                                                 src={`${post.pic}`}
                                                 alt={post.alt}
-                                                className="w-full h-auto max-w-xs md:max-w-full"
+                                                className="w-full h-auto max-w-xs md:max-w-full rounded-lg"
                                             />
                                         ) : (
                                             <div className="bg-gray-200 w-48 h-48"></div>
