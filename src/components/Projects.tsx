@@ -22,16 +22,6 @@ const projects = [
         youtubelink: "https://youtu.be/5Et-1yUL3K8",
     },
     {
-        name: "Kappa Theta Pi Website",
-        description:
-            "Website for Kappa Theta Pi, UMiami's first professional technology fraternity. Has info about events, members, etc.",
-        image: "/images/KTP.png",
-        github: "https://github.com/jareddj34/ktpmiami",
-        link: "https://ktpmiami.com",
-        piclink: "https://ktpmiami.com",
-        youtubelink: "",
-    },
-    {
         name: "Origin PC Website",
         description:
             "Updated and maintained the Origin PC website. Developed a new page showcasing the customizable aspects of the PCs.",
@@ -62,6 +52,16 @@ const projects = [
         youtubelink: "",
     },
     {
+        name: "Tests for Cognitive Impairment",
+        description:
+            "A Unity applications that puts the user through tests to detect if they have minor cognitive impairment of Alzheimer's disease. The application is ran through a VR headset, giving the user full immersion in the experience. Partnered with Dr. Ubbo Visser and Dr. Christine Lisetti.",
+        image: "/images/VisserProjectThumbnail.png",
+        github: "",
+        link: "https://docs.google.com/document/d/1cCCPMQl8vztD1VaHMsl3QkHKZ9jIcGALblYXA9DDlik/edit?tab=t.0",
+        piclink: "https://docs.google.com/document/d/1cCCPMQl8vztD1VaHMsl3QkHKZ9jIcGALblYXA9DDlik/edit?tab=t.0",
+        youtubelink: "",
+    },
+    {
         name: "Flower Adventures",
         description:
             "A video game I made for my Game Programming class. Focuses on a flower that fights bugs and traverses through obstacles. Created in Unity.",
@@ -81,6 +81,17 @@ const projects = [
         piclink: "https://youtu.be/FMKl4py7z60",
         youtubelink: "https://youtu.be/FMKl4py7z60",
     },
+    {
+        name: "Kappa Theta Pi Website",
+        description:
+            "Website for Kappa Theta Pi, UMiami's first professional technology fraternity. Has info about events, members, etc.",
+        image: "/images/KTP.png",
+        github: "https://github.com/jareddj34/ktpmiami",
+        link: "https://ktpmiami.com",
+        piclink: "https://ktpmiami.com",
+        youtubelink: "",
+    },
+    
     {
         name: "JamZ",
         description:
