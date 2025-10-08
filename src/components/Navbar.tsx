@@ -18,6 +18,14 @@ const Navbar: React.FC = () => {
         }
     };
 
+    const handleSectionClick = (sectionSelector: string, event: React.MouseEvent) => {
+        event.preventDefault();
+        const targetElement = document.querySelector(sectionSelector);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
+
     return (
         <div
             className="fixed top-0 inset-x-0 h-15 border-b border-zinc-300 z-[10] py-3 bg-gray-900/5 object-cover shadow-xl"
@@ -124,13 +132,76 @@ const Navbar: React.FC = () => {
                     >
                         Experience
                     </Link>
-                    <Link
-                        href="#projects"
-                        onClick={() => handleNavClick("projects")}
-                        style={{ fontSize: "22px" }}
-                    >
-                        Projects
-                    </Link>
+                    
+                    {/* Projects Dropdown */}
+                    <div className="relative group">
+                        <Link
+                            href="#projects"
+                            onClick={() => handleNavClick("projects")}
+                            style={{ fontSize: "22px" }}
+                            className="flex items-center hover:text-gray-600 transition-colors"
+                        >
+                            Projects
+                            <svg 
+                                className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                viewBox="0 0 24 24"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </Link>
+                        
+                        {/* Dropdown Menu */}
+                        <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div className="py-2">
+                                <a
+                                    href="#projects"
+                                    onClick={(e) => handleSectionClick('[data-section="websites"]', e)}
+                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                                >
+                                    Websites
+                                </a>
+                                <a
+                                    href="#projects"
+                                    onClick={(e) => handleSectionClick('[data-section="games"]', e)}
+                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                                >
+                                    Games
+                                </a>
+                                <a
+                                    href="#projects"
+                                    onClick={(e) => handleSectionClick('[data-section="animations"]', e)}
+                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                                >
+                                    After Effects
+                                </a>
+                                <a
+                                    href="#projects"
+                                    onClick={(e) => handleSectionClick('[data-section="blender"]', e)}
+                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                                >
+                                    Blender
+                                </a>
+                                <a
+                                    href="#projects"
+                                    onClick={(e) => handleSectionClick('[data-section="figmas"]', e)}
+                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                                >
+                                    Figmas
+                                </a>
+                                <a
+                                    href="#projects"
+                                    onClick={(e) => handleSectionClick('[data-section="photos"]', e)}
+                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                                >
+                                    Photoshop
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
