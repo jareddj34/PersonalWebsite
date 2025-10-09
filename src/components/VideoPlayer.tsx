@@ -35,7 +35,7 @@ export default function VideoPlayer({
         preload="metadata"
         className="w-full h-auto rounded-lg bg-black"
       >
-        Sorry, your browser doesn't support embedded videos.
+        Sorry, your browser doesnt support embedded videos.
       </video>
     </div>
   );
