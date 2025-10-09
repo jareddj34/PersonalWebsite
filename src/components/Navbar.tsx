@@ -19,6 +19,14 @@ const Navbar: React.FC = () => {
     };
 
     const handleSectionClick = (sectionSelector: string, event: React.MouseEvent) => {
+        // If we're not on the home page, navigate back to home (anchor to projects)
+        if (typeof window !== "undefined" && window.location.pathname !== "/" && window.location.pathname !== "") {
+            // Allow the browser to navigate to the home page anchor; do not prevent default here.
+            window.location.href = "/#projects";
+            return;
+        }
+
+        // If we are on the home page, prevent the default link behaviour and smooth-scroll to the target.
         event.preventDefault();
         const targetElement = document.querySelector(sectionSelector);
         if (targetElement) {
@@ -105,28 +113,28 @@ const Navbar: React.FC = () => {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-right justify-between gap-8 text-black font-medium">
                     <Link
-                        href="#home"
+                        href="/#home"
                         onClick={() => handleNavClick("home")}
                         style={{ fontSize: "22px" }}
                     >
                         Home
                     </Link>
                     <Link
-                        href="#about"
+                        href="/#about"
                         onClick={() => handleNavClick("about")}
                         style={{ fontSize: "22px" }}
                     >
                         About
                     </Link>
                     <Link
-                        href="#blog"
+                        href="/#blog"
                         onClick={() => handleNavClick("blog")}
                         style={{ fontSize: "22px" }}
                     >
                         Blog
                     </Link>
                     <Link
-                        href="#experience"
+                        href="/#experience"
                         onClick={() => handleNavClick("experience")}
                         style={{ fontSize: "22px" }}
                     >
@@ -136,7 +144,7 @@ const Navbar: React.FC = () => {
                     {/* Projects Dropdown */}
                     <div className="relative group">
                         <Link
-                            href="#projects"
+                            href="/#projects"
                             onClick={() => handleNavClick("projects")}
                             style={{ fontSize: "22px" }}
                             className="flex items-center hover:text-gray-600 transition-colors"
@@ -156,42 +164,42 @@ const Navbar: React.FC = () => {
                         <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                             <div className="py-2">
                                 <a
-                                    href="#projects"
+                                    href="/#projects"
                                     onClick={(e) => handleSectionClick('[data-section="websites"]', e)}
                                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                                 >
                                     Websites
                                 </a>
                                 <a
-                                    href="#projects"
+                                    href="/#projects"
                                     onClick={(e) => handleSectionClick('[data-section="games"]', e)}
                                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                                 >
                                     Games
                                 </a>
                                 <a
-                                    href="#projects"
+                                    href="/#projects"
                                     onClick={(e) => handleSectionClick('[data-section="animations"]', e)}
                                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                                 >
                                     After Effects
                                 </a>
                                 <a
-                                    href="#projects"
+                                    href="/#projects"
                                     onClick={(e) => handleSectionClick('[data-section="blender"]', e)}
                                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                                 >
                                     Blender
                                 </a>
                                 <a
-                                    href="#projects"
+                                    href="/#projects"
                                     onClick={(e) => handleSectionClick('[data-section="figmas"]', e)}
                                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                                 >
                                     Figmas
                                 </a>
                                 <a
-                                    href="#projects"
+                                    href="/#projects"
                                     onClick={(e) => handleSectionClick('[data-section="photos"]', e)}
                                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                                 >

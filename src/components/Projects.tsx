@@ -72,7 +72,7 @@ const games = [
         image: "/images/FlowerAdventures.png",
         github: "",
         link: "https://play.unity.com/en/games/258d4340-f91a-4763-8139-aa914a298d9f/webgl-builds",
-        piclink: "https://play.unity.com/en/games/258d4340-f91a-4763-8139-aa914a298d9f/webgl-builds",
+        piclink: "/flower",
         youtubelink: "https://www.youtube.com/watch?v=MElVeqwKQHM",
     },
     {
@@ -82,7 +82,7 @@ const games = [
         image: "/images/swampocalypse.jpg",
         github: "",
         link: "https://xr.miami.edu/research/faculty-projects/swampocalypse/index.html",
-        piclink: "https://xr.miami.edu/research/faculty-projects/swampocalypse/index.html",
+        piclink: "/airboat",
         youtubelink: "",
     },
     {
@@ -318,7 +318,7 @@ const Projects = () => {
                                     <div className="mt-8 md:w-1/2">
                                         <Link
                                             href={project.piclink}
-                                            target="_blank"
+                                            target=""
                                         >
                                             <Image
                                                 src={project.image}
