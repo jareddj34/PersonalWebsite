@@ -189,7 +189,7 @@ const Navbar: React.FC = () => {
                                     onClick={(e) => handleSectionClick('[data-section="blender"]', e)}
                                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                                 >
-                                    Blender
+                                    3D Models & Animations
                                 </a>
                                 <a
                                     href="/#projects"

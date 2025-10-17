@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/popover"
 import { Button } from "./ui/button";
 
+
 const websites = [
     {
         name: "Crabfit",
@@ -510,7 +511,7 @@ const Projects = () => {
             <div data-section="blender" style={{ marginTop: "150px" }}>
                 <div className="mt-12 text-center">
                     <h1 className="text-4xl font-bold mb-6">
-                        Blender Animations
+                        3D Models and Animations
                     </h1>
                     <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
                 </div>
@@ -710,6 +711,26 @@ const Projects = () => {
                                     </g>
                                 </svg>
                             </Link>
+                        </PopoverContent>
+                    </Popover>
+                    <Popover>
+                        <PopoverTrigger>
+                            <Image
+                                src="/images/blender/guitar.gif"
+                                alt="Typewriter Walking Animation"
+                                width={400}
+                                height={400}
+                                className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                            />
+                        </PopoverTrigger>
+                        <PopoverContent className="w-80">
+                            <h2 className="text-2xl font-bold mb-6">
+                                Guitar
+                            </h2>
+                            <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                This was my first ever model made the Maya. I wanted to create an object from one of my favorite hobbies, which is playing the guitar. Modeled in Maya, textured in Substance Painter.                  
+                            </p>
+                            
                         </PopoverContent>
                     </Popover>
                 </div>
