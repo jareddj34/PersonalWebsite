@@ -66,6 +66,7 @@ const games = [
         piclink: "https://docs.google.com/document/d/1cCCPMQl8vztD1VaHMsl3QkHKZ9jIcGALblYXA9DDlik/edit?tab=t.0",
         youtubelink: "",
     },
+    
     {
         name: "Flower Adventures",
         description:
@@ -94,6 +95,16 @@ const games = [
         github: "",
         link: "https://xr.miami.edu/research/faculty-projects/temikki-garden/index.html",
         piclink: "https://xr.miami.edu/research/faculty-projects/temikki-garden/index.html",
+        youtubelink: "",
+    },
+    {
+        name: "ARchaeology",
+        description:
+            "ARchaeology is an augmented reality application designed for Meta Quest to bring paleontology to your own backyard! The app's hands-on gameplay allows the user to step into the role of an archaeologist by uncovering, digging, cleaning, and assembling dinosaur skeletons.",
+        image: "/images/ARchaeology.png",
+        github: "",
+        link: "https://txp552.wixsite.com/archaeology",
+        piclink: "https://txp552.wixsite.com/archaeology",
         youtubelink: "",
     },
 ];
@@ -319,7 +330,8 @@ const Projects = () => {
                                     <div className="mt-8 md:w-1/2">
                                         <Link
                                             href={project.piclink}
-                                            target=""
+                                            target={project.piclink?.startsWith("http") ? "_blank" : undefined}
+                                            rel={project.piclink?.startsWith("http") ? "noopener noreferrer" : undefined}
                                         >
                                             <Image
                                                 src={project.image}
