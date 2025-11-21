@@ -49,7 +49,7 @@ export default function AirboatPage() {
                 <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left mb-14">
                     <div className="md:w-1/2">
                         <p className="text-justify justify-center items-center">I am the lead developer of this project, so I am responsible for nearly all the aspects of the Unity 
-                        application, implementing everyone else's work in the game, and connecting the program to the physical 
+                        application, implementing everyone else&apos;s work in the game, and connecting the program to the physical 
                         rig. I lead a team of very talented individuals, including 3D modelers, UI/UX designers, and sound 
                         engineers. During our weekly meetings, we discuss the work we have done, how we can implement it into 
                         the game, and the future steps we have to take. Collaborating with a great team really inspires and 
