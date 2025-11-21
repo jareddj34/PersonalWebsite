@@ -1,22 +1,25 @@
 import React from "react";
 
 const skills = [
+    { skill: "Unity" },
+    { skill: "Blender" },
+    { skill: "Unreal Engine" },
+    { skill: "Maya" },
+    { skill: "C#" },
+    { skill: "C++" },
     { skill: "Java" },
     { skill: "JavaScript" },
     { skill: "TypeScript" },
     { skill: "HTML" },
-    { skill: "Next.js" },
+    { skill: "React" },
     { skill: "Python" },
-    { skill: "C" },
-    { skill: "C#" },
     { skill: "R" },
     { skill: "MySQL" },
     { skill: "Figma" },
     { skill: "Photoshop" },
     { skill: "Illustrator" },
     { skill: "After Effects" },
-    { skill: "Unity" },
-    { skill: "Blender" },
+    
 ];
 
 const AboutSection = () => {
@@ -35,10 +38,10 @@ const AboutSection = () => {
                         </h1>
                         <p>
                             Hello, my name is Jared de Monteiro, and I am a
-                            Computer Scientist based in the San Francisco Bay
+                            Developer based in the San Francisco Bay
                             Area. I am currently a senior at the University
-                            of Miami, pursuing a B.S. in Computer Science and
-                            minoring in Mathematics and Interactive Media.
+                            of Miami, pursuing a B.S. in Computer Science, Interactive Media and
+                            minoring in Mathematics.
                         </p>
                         <br />
                         <p>
@@ -53,11 +56,10 @@ const AboutSection = () => {
                             combine with my passion for tech as well. I enjoy
                             creating things from scratch, and seeing all my work
                             come together to make a finished product. I love
-                            working with applications like Photoshop,
-                            Illustrator, Figma, and After Effects for creative
-                            projects. With my passion for creation, I have
-                            gotten into web development, using Next.js, creating
-                            sites that help people with their everyday problems.
+                            working with applications like Unity, Blender, Unreal Engine,
+                            Maya, Photoshop, Illustrator, Figma, and After Effects for creative
+                            projects. With my passion for creation, I have gotten into game
+                            development, web development, and 3D modeling/animation.
                         </p>
                     </div>
                     <div className="md:w-1/2">

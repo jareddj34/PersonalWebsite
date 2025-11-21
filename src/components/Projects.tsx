@@ -56,6 +56,40 @@ const websites = [
 ];
 
 const games = [
+
+    {
+        name: "Swampocalypse",
+        description:
+            "A VR airboat driving experience through a post-apocalyptic Everglades, fighting enemies and saving the environment along the way.",
+        image: "/images/swampocalypse.jpg",
+        github: "",
+        link: "/airboat",
+        piclink: "/airboat",
+        youtubelink: "",
+    },
+
+    {
+        name: "Flower Adventures",
+        description:
+            "A video game I made for my Game Programming class. Focuses on a flower that fights bugs and traverses through obstacles. Created in Unity.",
+        image: "/images/FlowerAdventures.png",
+        github: "",
+        link: "/flower",
+        piclink: "/flower",
+        youtubelink: "https://www.youtube.com/watch?v=MElVeqwKQHM",
+    },
+    
+    {
+        name: "Temikki Garden",
+        description:
+            "A mobile AR application to promote the emotional well-being of children during long hospital stays. Children can build, modify, and play in a living virtual garden while reminded of their accomplishments.",
+        image: "/images/temikki.jpg",
+        github: "",
+        link: "/temikki",
+        piclink: "/temikki",
+        youtubelink: "",
+    },
+
     {
         name: "Tests for Cognitive Impairment",
         description:
@@ -67,36 +101,6 @@ const games = [
         youtubelink: "",
     },
     
-    {
-        name: "Flower Adventures",
-        description:
-            "A video game I made for my Game Programming class. Focuses on a flower that fights bugs and traverses through obstacles. Created in Unity.",
-        image: "/images/FlowerAdventures.png",
-        github: "",
-        link: "https://play.unity.com/en/games/258d4340-f91a-4763-8139-aa914a298d9f/webgl-builds",
-        piclink: "/flower",
-        youtubelink: "https://www.youtube.com/watch?v=MElVeqwKQHM",
-    },
-    {
-        name: "Swampocalypse",
-        description:
-            "A VR airboat driving experience through an apocalyptic Everglades utilizing a custom made haptic rig.",
-        image: "/images/swampocalypse.jpg",
-        github: "",
-        link: "https://xr.miami.edu/research/faculty-projects/swampocalypse/index.html",
-        piclink: "/airboat",
-        youtubelink: "",
-    },
-    {
-        name: "Temikki Garden",
-        description:
-            "A mobile AR application to promote the emotional well-being of children during long hospital stays. Children can build, modify, and play in a living virtual garden while reminded of their accomplishments.",
-        image: "/images/temikki.jpg",
-        github: "",
-        link: "https://xr.miami.edu/research/faculty-projects/temikki-garden/index.html",
-        piclink: "https://xr.miami.edu/research/faculty-projects/temikki-garden/index.html",
-        youtubelink: "",
-    },
     {
         name: "ARchaeology",
         description:
@@ -215,21 +219,24 @@ const photos2 = [
 const Projects = () => {
     return (
         <section id="projects">
-            <div data-section="websites">
+            
+
+            <div data-section="games">
                 <h1 className="text-center font-bold text-4xl mb-6">
-                    Websites
+                    Games
                     <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
                 </h1>
 
                 <div className="flex flex-col space-y-28">
-                    {websites.map((project, idx) => {
+                    {games.map((project, idx) => {
                         return (
                             <div key={idx}>
                                 <div className="flex flex-col md:flex-row md:space-x-12">
                                     <div className="mt-8 md:w-1/2">
                                         <Link
                                             href={project.piclink}
-                                            target="_blank"
+                                            target={project.piclink?.startsWith("http") ? "_blank" : undefined}
+                                            rel={project.piclink?.startsWith("http") ? "noopener noreferrer" : undefined}
                                         >
                                             <Image
                                                 src={project.image}
@@ -267,7 +274,8 @@ const Projects = () => {
                                             {project.link && (
                                                 <Link
                                                     href={project.link}
-                                                    target="_blank"
+                                                    target={project.link?.startsWith("http") ? "_blank" : undefined}
+                                                    rel={project.link?.startsWith("http") ? "noopener noreferrer" : undefined}
                                                 >
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -316,22 +324,21 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div data-section="games" style={{marginTop: "150px"}}>
+            <div data-section="websites" style={{marginTop: "150px"}}>
                 <h1 className="text-center font-bold text-4xl mb-6">
-                    Games
+                    Websites
                     <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
                 </h1>
 
                 <div className="flex flex-col space-y-28">
-                    {games.map((project, idx) => {
+                    {websites.map((project, idx) => {
                         return (
                             <div key={idx}>
                                 <div className="flex flex-col md:flex-row md:space-x-12">
                                     <div className="mt-8 md:w-1/2">
                                         <Link
                                             href={project.piclink}
-                                            target={project.piclink?.startsWith("http") ? "_blank" : undefined}
-                                            rel={project.piclink?.startsWith("http") ? "noopener noreferrer" : undefined}
+                                            target="_blank"
                                         >
                                             <Image
                                                 src={project.image}
