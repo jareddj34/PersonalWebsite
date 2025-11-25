@@ -7,6 +7,35 @@ import {
 } from "@/components/ui/carousel";
 
 const posts = [
+
+    {
+        title: "Games for Good Conference",
+        date: "November 2025",
+        description:
+            "I was lucky enough to be invited to the Games for Good Conference at Clark University! This conference focues on how games can be used for social good, and how they can make a positive impact on the world. I was able to attend various panels and workshops, where I learned from industry experts and met other passionate individuals. I was also able to demo my game that I am currently working on, Swampocalypse, an airboat simulator where you drive through a post-apocalyptic Miami Everglades, killing zombies and saving the environment along the way. A huge thanks to the organizers for making this possible!",
+        pic: "/images/gamesforgood.PNG",
+        alt: "Hackathon Win",
+    },
+    {
+        title: "Animation Demo Reel 2025",
+        date: "2025",
+        description: (
+            <>
+                Over the past year, I have been learning and improving my skills in 3D animation using both Blender and Maya. I have created a variety of animations, from room transformations to character animations. I have compiled them into a {" "}
+                <a 
+                    href="https://www.youtube.com/watch?v=wifdeubujKk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                >
+                    demo reel
+                </a>
+                , that I am super excited to share with everyone! I am super excited to continue learning and improving my skills in animation!
+            </>
+        ),
+        pic: "/images/blender/DemoReelThumbnail.png",
+        alt: "Hackathon Win",
+    },
     {
         title: "Tests for Cognitive Impairment",
         date: "Spring 2025",
@@ -60,7 +89,7 @@ export default function Blog() {
                         return (
                             <CarouselItem key={index}>
                                 <div className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
-                                    <div className="w-full md:w-1/4 flex items-center justify-center">
+                                    <div className="w-full md:w-1/4 flex items-center justify-center pt-10">
                                         {post.pic ? (
                                             <img
                                                 src={`${post.pic}`}
