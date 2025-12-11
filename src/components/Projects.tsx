@@ -705,7 +705,7 @@ const Projects = () => {
                                 Cactus Walking
                             </h2>
                             <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                                One of my mother's favorite plants is a cactus. I wanted to create this model and animate it for her birthday. I have also implemented this character in the game I am currently developing. Currently developing a short animated film with this model.
+                                One of my mothers favorite plants is a cactus. I wanted to create this model and animate it for her birthday. I have also implemented this character in the game I am currently developing. Currently developing a short animated film with this model.
                             </p>
                             
                         </PopoverContent>
