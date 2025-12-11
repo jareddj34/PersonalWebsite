@@ -433,9 +433,46 @@ const Projects = () => {
                     <h1 className="text-4xl font-bold mb-6">
                         3D Models and Animations
                     </h1>
+                    <h2 className="text-2xl">
+                        Check out my animation portfolio website <a 
+                    href="https://ppare34.artstation.com/projects"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                >
+                    here!
+                </a>
+                    </h2>
                     <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
                 </div>
                 <div className="flex flex-wrap justify-center gap-8"> 
+
+                    <Link
+                        href="https://www.youtube.com/watch?v=wifdeubujKk"
+                        target="_blank"
+                    >
+                        <Image
+                            src="/images/blender/DemoReelThumbnail.png"
+                            alt="Demo Reel Thumbnail"
+                            width={500}
+                            height={500}
+                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                        />
+                    </Link>
+
+                    <Link
+                        href="https://www.youtube.com/watch?v=npbupjoH3xc"
+                        target="_blank"
+                    >
+                        <Image
+                            src="/images/blender/NutcrackerThumbnail.png"
+                            alt="Nutcracker Thumbnail"
+                            width={500}
+                            height={500}
+                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                        />
+                    </Link>
+
                     <Popover>
                         <PopoverTrigger>
                             <Image
@@ -637,7 +674,7 @@ const Projects = () => {
                         <PopoverTrigger>
                             <Image
                                 src="/images/blender/guitar.gif"
-                                alt="Typewriter Walking Animation"
+                                alt="Guitar"
                                 width={400}
                                 height={400}
                                 className="rounded-xl shadow-xl hover:opacity-70 hover-float"
@@ -653,19 +690,27 @@ const Projects = () => {
                             
                         </PopoverContent>
                     </Popover>
+                    <Popover>
+                        <PopoverTrigger>
+                            <Image
+                                src="/images/blender/CactusWalking.gif"
+                                alt="Cactus Walking Animation"
+                                width={400}
+                                height={400}
+                                className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                            />
+                        </PopoverTrigger>
+                        <PopoverContent className="w-80">
+                            <h2 className="text-2xl font-bold mb-6">
+                                Cactus Walking
+                            </h2>
+                            <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                One of my mother's favorite plants is a cactus. I wanted to create this model and animate it for her birthday. I have also implemented this character in the game I am currently developing. Currently developing a short animated film with this model.
+                            </p>
+                            
+                        </PopoverContent>
+                    </Popover>
 
-                    <Link
-                        href="https://www.youtube.com/watch?v=wifdeubujKk"
-                        target="_blank"
-                    >
-                        <Image
-                            src="/images/blender/DemoReelThumbnail.png"
-                            alt="Demo Reel Thumbnail"
-                            width={1000}
-                            height={1000}
-                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
-                        />
-                    </Link>
 
                 </div>
             </div>
