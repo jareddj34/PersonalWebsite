@@ -67,6 +67,16 @@ const games = [
         piclink: "/airboat",
         youtubelink: "",
     },
+    {
+        name: "Get Gator Back",
+        description:
+            "A 2D platformer where you play as Al or Ally the Alligator, and help them get back to their homes by exploring various environments and taking out invasive species along the way.",
+        image: "/images/GetGatorBack.png",
+        github: "",
+        link: "https://steinvisionstudios.itch.io/get-gator-back",
+        piclink: "https://steinvisionstudios.itch.io/get-gator-back",
+        youtubelink: "",
+    },
 
     {
         name: "Flower Adventures",
