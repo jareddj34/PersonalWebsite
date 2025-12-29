@@ -8,6 +8,27 @@ import {
 
 const posts = [
 
+
+    {
+        title: "Game Jam Win",
+        date: "December 2025",
+        description: (
+            <>
+                My team and I placed 1st for the Broward XP Boost - Citrus Boost Jam! We spent a weekend creating a 2D platformer called "Get Gator Back", where you play as a lost alligator trying to get back to their home by traversing through different terrain, obstacles, and enemies. Along the journey, the player learns about imiportant environmental facts and issues, trying to preserve each biome they cross. The game can be played {" "}
+                <a 
+                    href="https://steinvisionstudios.itch.io/get-gator-back"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                >
+                    here.
+                </a>
+                {" "} We will continue updating and improving the experience, and we are very excited for the future of the game!
+            </>
+        ),
+        pic: "/images/GetGatorBackHome.png",
+        alt: "Get Gator Back Homepage",
+    },
     {
         title: "Games for Good Conference",
         date: "November 2025",
