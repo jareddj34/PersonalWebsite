@@ -456,6 +456,19 @@ const Projects = () => {
                     <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
                 </div>
                 <div className="flex flex-wrap justify-center gap-8"> 
+                    
+                    <Link
+                        href="https://www.youtube.com/watch?v=C9jjvxcFIYo"
+                        target="_blank"
+                    >
+                        <Image
+                            src="/images/blender/CactusThumbnailFinal.png"
+                            alt="Demo Reel Thumbnail"
+                            width={700}
+                            height={500}
+                            className="rounded-xl shadow-xl hover:opacity-70 hover-float"
+                        />
+                    </Link>
 
                     <Link
                         href="https://www.youtube.com/watch?v=wifdeubujKk"
@@ -715,7 +728,7 @@ const Projects = () => {
                                 Cactus Walking
                             </h2>
                             <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                                One of my mothers favorite plants is a cactus. I wanted to create this model and animate it for her birthday. I have also implemented this character in the game I am currently developing. Currently developing a short animated film with this model.
+                                One of my mothers favorite plants is a cactus. I wanted to create this model and animate it for her birthday. I have also implemented this character in the game I am currently developing.
                             </p>
                             
                         </PopoverContent>
