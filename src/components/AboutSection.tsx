@@ -52,7 +52,7 @@ const AboutSection = () => {
                         </p>
                         <br />
                         <p>
-                            I have also huge passion for art, which I like to
+                            I also have a huge passion for art, which I like to
                             combine with my passion for tech as well. I enjoy
                             creating things from scratch, and seeing all my work
                             come together to make a finished product. I love

@@ -101,6 +101,28 @@ const games = [
     },
 
     {
+        name: "AI Literacy",
+        description:
+            "This research explores how AI-driven, adaptive virtual reality learning experiences, co-designed with educators, can enhance literacy development through immersive, personalized, and engaging environments grounded in cognitive and learning sciences.",
+        image: "/images/ai_literacy.png",
+        github: "",
+        link: "https://xr.miami.edu/labs/frl/research.html#ai-literacy",
+        piclink: "https://xr.miami.edu/labs/frl/research.html#ai-literacy",
+        youtubelink: "",
+    },
+
+    {
+        name: "Atomic Chemical Structures",
+        description:
+            "A mixed reality experience for students to interact with atomic models first hand. Users can select atoms from the periodic table and examine their internal structures.",
+        image: "/images/atomic.png",
+        github: "",
+        link: "",
+        piclink: "https://vimeo.com/1151794143?share=copy&fl=sv&fe=ci",
+        youtubelink: "https://vimeo.com/1151794143?share=copy&fl=sv&fe=ci",
+    },
+
+    {
         name: "Tests for Cognitive Impairment",
         description:
             "A Unity applications that puts the user through tests to detect if they have minor cognitive impairment of Alzheimer's disease. The application is ran through a VR headset, giving the user full immersion in the experience. Partnered with Dr. Ubbo Visser and Dr. Christine Lisetti.",
