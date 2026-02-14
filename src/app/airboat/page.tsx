@@ -148,7 +148,7 @@ export default function AirboatPage() {
             {/* Project Overview Cards */}
             <div className="bg-gradient-to-b from-white to-slate-50 py-20">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="grid md:grid-cols-4 gap-6">
+                    <div className="grid md:grid-cols-4 gap-6 mb-6">
                         <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
                             <div className="text-emerald-600 font-bold text-sm mb-2">PROJECT TYPE</div>
                             <div className="text-slate-900 font-semibold text-lg">Location-Based VR Experience</div>
@@ -331,7 +331,7 @@ export default function AirboatPage() {
                                     <h3 className="text-2xl font-bold text-slate-900 mb-3">Field Research</h3>
                                     <p className="text-slate-700 leading-relaxed">
                                         Before starting development, our team conducted field testing in the actual Everglades. 
-                                        We took an airboat tour to experience firsthand what it's like to pilot through the Miami 
+                                        We took an airboat tour to experience firsthand what it&apos;s like to pilot through the Miami 
                                         Everglades, studying the movement, sounds, and environment to ensure authentic recreation 
                                         in VR.
                                     </p>
@@ -413,8 +413,8 @@ export default function AirboatPage() {
                             <h3 className="text-2xl font-bold text-slate-900">Leadership</h3>
                         </div>
                         <p className="text-slate-700 leading-relaxed">
-                            As lead developer, I'm responsible for nearly all aspects of the Unity application—implementing 
-                            everyone's work in the game and connecting the program to the physical rig. I lead a talented team 
+                            As lead developer, I&apos;m responsible for nearly all aspects of the Unity application—implementing 
+                            everyone&apos;s work in the game and connecting the program to the physical rig. I lead a talented team 
                             of 3D modelers, UI/UX designers, and sound engineers through weekly meetings where we discuss progress, 
                             implementation strategies, and future steps.
                         </p>
@@ -428,8 +428,8 @@ export default function AirboatPage() {
                             <h3 className="text-2xl font-bold">Impact</h3>
                         </div>
                         <p className="leading-relaxed">
-                            Collaborating with a great team really inspires and motivates me to do my best work. It's incredibly 
-                            rewarding to see all our efforts come together to create an experience that's both entertaining and 
+                            Collaborating with a great team really inspires and motivates me to do my best work. It&apos;s incredibly 
+                            rewarding to see all our efforts come together to create an experience that&apos;s both entertaining and 
                             educational, potentially changing how people think about environmental conservation.
                         </p>
                     </div>
@@ -519,7 +519,7 @@ export default function AirboatPage() {
                             </div>
                             <div className="space-y-3 text-slate-700 text-sm leading-relaxed">
                                 <p><strong>Challenge:</strong> Meta Quest 3 hardware limitations restricted environmental complexity.</p>
-                                <p><strong>Solution:</strong> Balanced realism with performance using Unity's terrain editor, Mesh Baker for optimization, strategic fog placement, and intelligent object culling to maintain maximum frame rate.</p>
+                                <p><strong>Solution:</strong> Balanced realism with performance using Unity&apos;s terrain editor, Mesh Baker for optimization, strategic fog placement, and intelligent object culling to maintain maximum frame rate.</p>
                             </div>
                         </div>
 
@@ -551,7 +551,7 @@ export default function AirboatPage() {
                     <p className="text-lg text-slate-700 mb-6 leading-relaxed">
                         The main purpose is to deliver a fun and educational experience, where players eliminate zombies 
                         while learning about environmental conservation. Each level presents unique obstacles and events 
-                        that players must navigate to stop the factory's pollution.
+                        that players must navigate to stop the factory&apos;s pollution.
                     </p>
                     <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-3">
@@ -646,8 +646,8 @@ export default function AirboatPage() {
                             </div>
                             <p className="text-slate-700 leading-relaxed">
                                 These challenges forced me outside my comfort zone, teaching me hardware integration, 
-                                performance optimization for VR, and advanced Unity physics—skills I wouldn't have gained 
-                                from traditional projects. Challenges aren't obstacles; they're opportunities for growth.
+                                performance optimization for VR, and advanced Unity physics—skills I wouldn&apos;t have gained 
+                                from traditional projects. Challenges aren&apos;t obstacles; they&apos;re opportunities for growth.
                             </p>
                         </div>
 
@@ -660,7 +660,7 @@ export default function AirboatPage() {
                             </div>
                             <p className="text-slate-700 leading-relaxed">
                                 Working with talented people from different backgrounds taught me the irreplaceable value 
-                                of diverse perspectives. Everyone's unique skillsets merged to create something none of us 
+                                of diverse perspectives. Everyone&apos;s unique skillsets merged to create something none of us 
                                 could have built alone. This reinforced that collaboration is essential in any meaningful endeavor.
                             </p>
                         </div>
@@ -703,7 +703,7 @@ export default function AirboatPage() {
                     <div className="w-16 h-1 bg-white/30 mx-auto mb-8"></div>
                     <div className="space-y-6 text-lg leading-relaxed">
                         <p className="text-emerald-50">
-                            I chose to showcase Swampocalypse because it represents everything I've learned and achieved as 
+                            I chose to showcase Swampocalypse because it represents everything I&apos;ve learned and achieved as 
                             a game developer. This project allowed me to merge storytelling, game design, and technical skills 
                             into a cohesive experience that entertains while educating about critical environmental issues.
                         </p>
@@ -714,7 +714,7 @@ export default function AirboatPage() {
                             something that might actually change how people think about conservation.
                         </p>
                         <p className="text-white font-semibold text-xl">
-                            This isn't just a game—it's a demonstration of how interactive media can inspire real-world change.
+                            This isn&apos;t just a game—it&apos;s a demonstration of how interactive media can inspire real-world change.
                         </p>
                     </div>
                 </div>

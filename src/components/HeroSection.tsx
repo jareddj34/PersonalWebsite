@@ -147,7 +147,7 @@ const HeroSection = () => {
                                 Welcome to my portfolio
                             </p> */}
                             <h1 className="text-5xl md:text-7xl font-bold text-slate-900">
-                                Hi, I'm{" "}
+                                Hi, I&apos;m{" "}
                                 <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
                                     Jared
                                 </span>
@@ -155,7 +155,7 @@ const HeroSection = () => {
                         </div>
                         
                         <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl">
-                            A developer with a passion for{" "}
+                            A developer, designer, and technologist with a passion for{" "}
                             <span className="font-semibold text-slate-900">creative technology</span>.
                         </p>
 
