@@ -29,10 +29,10 @@ export default function RootLayout({
                     content="Jared, de Monteiro, computer science, game developer"
                 />
             </Head>
-            <body className="min-h-screen pt-12 bg-slate-50 antialiased">
+            <body className="min-h-screen bg-slate-50 antialiased">
                 <Navbar />
-                <div className="container max-w-7xl mx-auto h-full pb-4">
-                    {children}
+                <div className="mx-auto h-full pb-4"> {/* used to have container and max-w-7xl*/}
+                    {children} 
                 </div>
             </body>
         </html>

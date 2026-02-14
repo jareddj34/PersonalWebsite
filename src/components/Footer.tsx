@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
             <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-200 border-0"></hr>
             <div className="mx-auto  p-4 flex flex-col text-center text-neutral-900 md:flex-row md:justify-between">
-                <div>© 2025 Jared de Monteiro</div>
+                <div>© 2026 Jared de Monteiro</div>
                 <div className="flex flex-row items-center justify-center space-x-2 mb-1">
                     <a
                         target="_blank"
@@ -71,3 +71,111 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// import Link from "next/link";
+// import React from "react";
+// import { Linkedin, Instagram, Github, Mail, Heart } from "lucide-react";
+
+// const Footer = () => {
+//     return (
+//         <footer className="bg-slate-900 text-white">
+//             <div className="container mx-auto px-6 py-12">
+//                 <div className="max-w-6xl mx-auto">
+//                     {/* Main Footer Content */}
+//                     <div className="grid md:grid-cols-3 gap-12 mb-8">
+//                         {/* Brand Section */}
+//                         <div className="space-y-4">
+//                             <h3 className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent">
+//                                 Jared de Monteiro
+//                             </h3>
+//                             <p className="text-slate-400 leading-relaxed">
+//                                 Computer Scientist, Game Developer, and Creative Technologist building immersive experiences.
+//                             </p>
+//                         </div>
+
+//                         {/* Quick Links */}
+//                         <div className="space-y-4">
+//                             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+//                             <nav className="flex flex-col space-y-2">
+//                                 <Link href="/#home" className="text-slate-400 hover:text-emerald-400 transition-colors">
+//                                     Home
+//                                 </Link>
+//                                 <Link href="/#about" className="text-slate-400 hover:text-emerald-400 transition-colors">
+//                                     About
+//                                 </Link>
+//                                 <Link href="/#experience" className="text-slate-400 hover:text-emerald-400 transition-colors">
+//                                     Experience
+//                                 </Link>
+//                                 <Link href="/#projects" className="text-slate-400 hover:text-emerald-400 transition-colors">
+//                                     Projects
+//                                 </Link>
+//                             </nav>
+//                         </div>
+
+//                         {/* Connect Section */}
+//                         <div className="space-y-4">
+//                             <h4 className="text-lg font-semibold text-white">Let's Connect</h4>
+//                             <p className="text-slate-400">
+//                                 Feel free to reach out for collaborations or just a friendly hello!
+//                             </p>
+//                             <div className="flex gap-3">
+//                                 <a
+//                                     href="https://www.linkedin.com/in/jareddemonteiro/"
+//                                     target="_blank"
+//                                     rel="noopener noreferrer"
+//                                     className="p-3 bg-slate-800 rounded-lg hover:bg-emerald-600 transition-all duration-300 hover:scale-110 group"
+//                                     aria-label="LinkedIn"
+//                                 >
+//                                     <Linkedin className="w-5 h-5" />
+//                                 </a>
+//                                 <a
+//                                     href="https://github.com/jareddj34"
+//                                     target="_blank"
+//                                     rel="noopener noreferrer"
+//                                     className="p-3 bg-slate-800 rounded-lg hover:bg-emerald-600 transition-all duration-300 hover:scale-110 group"
+//                                     aria-label="GitHub"
+//                                 >
+//                                     <Github className="w-5 h-5" />
+//                                 </a>
+//                                 <a
+//                                     href="https://www.instagram.com/jared.d34/"
+//                                     target="_blank"
+//                                     rel="noopener noreferrer"
+//                                     className="p-3 bg-slate-800 rounded-lg hover:bg-emerald-600 transition-all duration-300 hover:scale-110 group"
+//                                     aria-label="Instagram"
+//                                 >
+//                                     <Instagram className="w-5 h-5" />
+//                                 </a>
+//                                 <a
+//                                     href="mailto:jared@example.com"
+//                                     className="p-3 bg-slate-800 rounded-lg hover:bg-emerald-600 transition-all duration-300 hover:scale-110 group"
+//                                     aria-label="Email"
+//                                 >
+//                                     <Mail className="w-5 h-5" />
+//                                 </a>
+//                             </div>
+//                         </div>
+//                     </div>
+
+//                     {/* Divider */}
+//                     <div className="border-t border-slate-800 my-8"></div>
+
+//                     {/* Bottom Footer */}
+//                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
+//                         <div className="flex items-center gap-2">
+//                             <span>© 2026 Jared de Monteiro.</span>
+//                             <span className="hidden md:inline">All rights reserved.</span>
+//                         </div>
+//                         {/* <div className="flex items-center gap-2">
+//                             <span>Built with</span>
+//                             <Heart className="w-4 h-4 text-red-500 fill-current" />
+//                             <span>using Next.js & Tailwind CSS</span>
+//                         </div> */}
+//                     </div>
+//                 </div>
+//             </div>
+//         </footer>
+//     );
+// };
+
+// export default Footer;
