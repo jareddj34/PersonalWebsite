@@ -150,7 +150,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 const posts = [
     {

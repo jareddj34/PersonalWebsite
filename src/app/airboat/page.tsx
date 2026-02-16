@@ -119,7 +119,7 @@
 // }
 import React from "react";
 import Image from "next/image";
-import { Video, Zap, Target, Users, Cpu, Gamepad2, Trophy, Clock, AlertCircle, Lightbulb, TrendingUp, CheckCircle } from "lucide-react";
+import { Video, Zap, Target, Users, Cpu, Gamepad2, Trophy, AlertCircle, Lightbulb, TrendingUp, CheckCircle } from "lucide-react";
 import Footer from "@/components/Footer";
 
 export default function AirboatPage() {

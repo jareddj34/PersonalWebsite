@@ -921,7 +921,7 @@
 // export default Projects;
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import PhotoAlbum from "react-photo-album";
@@ -931,6 +931,56 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+
+// Lazy loading component for Figma embeds
+const LazyFigmaEmbed = ({ embedUrl, title }: { embedUrl: string; title: string }) => {
+    const [isVisible, setIsVisible] = useState(false);
+    const [hasLoaded, setHasLoaded] = useState(false);
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting && !hasLoaded) {
+                    setIsVisible(true);
+                    setHasLoaded(true);
+                }
+            },
+            { 
+                threshold: 0.1,
+                rootMargin: '100px' // Start loading slightly before visible
+            }
+        );
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, [hasLoaded]);
+
+    return (
+        <div ref={containerRef} className="w-full" style={{ minHeight: '650px' }}>
+            {isVisible ? (
+                <iframe
+                    style={{ border: "none", backgroundColor: "transparent" }}
+                    width="100%"
+                    height={650}
+                    src={embedUrl}
+                    title={title}
+                    allowFullScreen
+                />
+            ) : (
+                <div className="w-full h-[650px] bg-slate-100 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                        <Figma className="w-16 h-16 text-slate-400 mx-auto mb-4 animate-pulse" />
+                        <p className="text-slate-600">Scroll down to load {title}</p>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
 
 // All your original data
 const websites = [
@@ -1153,17 +1203,17 @@ const figmas = [
             </>
         ),
         image: "/images/LaundrCaseStudyThumbnail.png",
-        embed: <iframe style={{ border: "none", backgroundColor: "transparent" }} width={500} height={650} src="https://embed.figma.com/proto/mJzo4qeJOG2kd87zWquEJf/Low-Fidelity-Laundr-App?node-id=341-1040&p=f&scaling=scale-down&content-scaling=fixed&page-id=341%3A700&starting-point-node-id=341%3A1040&embed-host=share" allowFullScreen />,
+        embedUrl: "https://embed.figma.com/proto/mJzo4qeJOG2kd87zWquEJf/Low-Fidelity-Laundr-App?node-id=341-1040&p=f&scaling=scale-down&content-scaling=fixed&page-id=341%3A700&starting-point-node-id=341%3A1040&embed-host=share",
     },
     {
         name: "Travel Clock",
         description: "An app for users who travel on trains, and would like to sleep and get woken up at a specific time before their stop",
-        embed: <iframe style={{ border: "none", backgroundColor: "transparent" }} width={500} height={650} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3AIiNrftQ2OY0LivjxNLCA%2FTravel-Clock%3Ftype%3Ddesign%26node-id%3D1-2%26t%3D2NyecyiIQlSXjcSj-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign" allowFullScreen />,
+        embedUrl: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3AIiNrftQ2OY0LivjxNLCA%2FTravel-Clock%3Ftype%3Ddesign%26node-id%3D1-2%26t%3D2NyecyiIQlSXjcSj-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign",
     },
     {
         name: "GoalBud",
         description: "An app for users who need help keeping track of their goals, as well as socialize with other with similar interests.",
-        embed: <iframe style={{ border: "none", backgroundColor: "transparent" }} width={500} height={650} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FhCBUVKAB7V2uYU25VARgvp%2FGoalBud%3Ftype%3Ddesign%26t%3D2VbiKM2i0LZ8Rbf3-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A16%26node-id%3D1-16%26mode%3Ddesign" allowFullScreen />,
+        embedUrl: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FhCBUVKAB7V2uYU25VARgvp%2FGoalBud%3Ftype%3Ddesign%26t%3D2VbiKM2i0LZ8Rbf3-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A16%26node-id%3D1-16%26mode%3Ddesign",
     },
 ];
 
@@ -1535,7 +1585,7 @@ const Projects = () => {
                                             )}
                                         </div>
                                         <div className={`bg-white rounded-2xl shadow-lg p-4 ${!isEven ? 'md:order-1' : ''}`}>
-                                            {figma.embed}
+                                            <LazyFigmaEmbed embedUrl={figma.embedUrl} title={figma.name} />
                                         </div>
                                     </div>
                                 );

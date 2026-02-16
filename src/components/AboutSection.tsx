@@ -87,7 +87,7 @@
 
 // export default AboutSection;
 import React from "react";
-import { Code2, Palette, Gamepad2, Globe } from "lucide-react";
+import { Code2 } from "lucide-react";
 
 const skills = [
     { skill: "Unity", category: "game" },
