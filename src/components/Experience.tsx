@@ -285,6 +285,8 @@ export default function Experience() {
                                                                     width={200}
                                                                     height={100}
                                                                     className="object-contain max-h-20 group-hover:scale-105 transition-transform"
+                                                                    quality={75}
+                                                                    loading="lazy"
                                                                 />
                                                             </div>
                                                         </Link>

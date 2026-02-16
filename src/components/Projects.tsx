@@ -1093,21 +1093,21 @@ const blenderProjects = [
         videoLink: "https://www.youtube.com/watch?v=npbupjoH3xc",
     },
     {
-        image: "/images/blender/CatInBedroom.gif",
+        image: "/images/blender/CatInBedroom.mp4",
         alt: "Cat In Bedroom Animation",
         title: "Cat In Bedroom",
         description: "Being one of the first models that I've created in Blender, I decided to improve upon it by animating the objects to fly in the screen, similar to the Airbnb commercials. The cat is also the first character I ever modeled and rigged, following Joey Carlino's Youtube tutorials.",
         videoLink: "https://www.youtube.com/shorts/uBzHTZ0ClMY",
     },
     {
-        image: "/images/blender/NewBedroomReduced.gif",
+        image: "/images/blender/NewBedroomReduced.mp4",
         alt: "Vibrant Living Room Animation",
         title: "Vibrant Living Room",
         description: "A colorful and vibrant isometric living room, with the objects soaring into the scene in unique ways.",
         videoLink: "https://www.youtube.com/shorts/s-HQNWTM_Wg",
     },
     {
-        image: "/images/blender/LivingRoom.gif",
+        image: "/images/blender/LivingRoom.mp4",
         alt: "Catalogue Living Room Animation",
         title: "Catalogue Living Room",
         description: "I've always imagined this living room being shown in a catalogue of home decor inspiration. Again, another Airbnb style animation.",
@@ -1115,26 +1115,26 @@ const blenderProjects = [
     },
     
     {
-        image: "/images/blender/CactusWalkingReduced.gif",
+        image: "/images/blender/CactusWalkingReduced.mp4",
         alt: "Cactus Walking Animation",
         title: "Cactus Walking",
         description: "One of my mothers favorite plants is a cactus. I wanted to create this model and animate it for her birthday. I have also implemented this character in the game I am currently developing.",
     },
     {
-        image: "/images/blender/typewriterwalkinggifreduced.gif",
+        image: "/images/blender/typewriterwalkinggifreduced.mp4",
         alt: "Typewriter Walking Animation",
         title: "Typewriter Walking",
         description: "I found inspiration for this animation while browsing an art museum in Sedona, Arizona. There were metal sculptures of common antiques, that were morphed into characters with arms and legs.",
         videoLink: "https://www.youtube.com/watch?v=87x30FPKX1o",
     },
     {
-        image: "/images/blender/guitarReduced.gif",
+        image: "/images/blender/guitarReduced.mp4",
         alt: "Guitar",
         title: "Guitar",
         description: "This was my first ever model made the Maya. I wanted to create an object from one of my favorite hobbies, which is playing the guitar. Modeled in Maya, textured in Substance Painter.",
     },
     {
-        image: "/images/blender/rubikscubewalkingreduced.gif",
+        image: "/images/blender/rubikscubewalkingreduced.mp4",
         alt: "Rubik's Cube Walking Animation",
         title: "Rubik's Cube Walking",
         description: "Solving Rubik's Cubes is one of my longest and most cherished hobbies. Having a collection of over 100 cubes, I knew I had to incorporate one of the things I identify with into my modeling and animation.",
@@ -1200,7 +1200,9 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
                             width={700}
                             height={467}
                             className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
+                            quality={75}
                             loading="lazy"
+
                         />
                         {project.featured && (
                             <div className="absolute top-4 right-4 px-3 py-1.5 bg-gradient-to-r from-emerald-500 to-green-500 text-white text-sm font-bold rounded-full flex items-center gap-1 z-20">
@@ -1435,14 +1437,21 @@ const Projects = () => {
                                     <Popover>
                                         <PopoverTrigger className="w-full">
                                             <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                                                <Image
-                                                    src={project.image}
-                                                    alt={project.alt}
-                                                    width={500}
-                                                    height={500}
-                                                    className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                                                    loading="lazy"
-                                                />
+                                                {project.image.endsWith('.mp4') ? (
+                                                    <video autoPlay loop muted playsInline className="w-full h-auto rounded-xl">
+                                                        <source src={project.image} type="video/mp4" />
+                                                    </video>
+                                                ) : (
+                                                    <Image
+                                                        src={project.image}
+                                                        alt={project.alt}
+                                                        width={500}
+                                                        height={500}
+                                                        className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                                                        quality={75}
+                                                        loading="lazy"
+                                                    />
+                                                )}
                                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                                     <h3 className="text-white font-bold text-xl">{project.title}</h3>
                                                 </div>

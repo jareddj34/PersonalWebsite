@@ -155,6 +155,8 @@ export default function FlowerPage() {
                                 width={700}
                                 height={467}
                                 className="w-full h-auto"
+                                quality={75}
+                                loading="lazy"
                             />
                         </div>
                     </div>

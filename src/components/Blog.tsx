@@ -268,6 +268,9 @@ export default function Blog() {
                                                                 alt={post.alt}
                                                                 fill
                                                                 className="object-cover hover:scale-105 transition-transform duration-500"
+                                                                quality={75}
+                                                                loading="lazy"
+                                                                
                                                             />
                                                         </div>
                                                     </div>
