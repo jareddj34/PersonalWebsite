@@ -1100,7 +1100,7 @@ const blenderProjects = [
         videoLink: "https://www.youtube.com/shorts/uBzHTZ0ClMY",
     },
     {
-        image: "/images/blender/NewBedroom.gif",
+        image: "/images/blender/NewBedroomReduced.gif",
         alt: "Vibrant Living Room Animation",
         title: "Vibrant Living Room",
         description: "A colorful and vibrant isometric living room, with the objects soaring into the scene in unique ways.",
@@ -1115,26 +1115,26 @@ const blenderProjects = [
     },
     
     {
-        image: "/images/blender/CactusWalking.gif",
+        image: "/images/blender/CactusWalkingReduced.gif",
         alt: "Cactus Walking Animation",
         title: "Cactus Walking",
         description: "One of my mothers favorite plants is a cactus. I wanted to create this model and animate it for her birthday. I have also implemented this character in the game I am currently developing.",
     },
     {
-        image: "/images/blender/typewriterwalkinggif.gif",
+        image: "/images/blender/typewriterwalkinggifreduced.gif",
         alt: "Typewriter Walking Animation",
         title: "Typewriter Walking",
         description: "I found inspiration for this animation while browsing an art museum in Sedona, Arizona. There were metal sculptures of common antiques, that were morphed into characters with arms and legs.",
         videoLink: "https://www.youtube.com/watch?v=87x30FPKX1o",
     },
     {
-        image: "/images/blender/guitar.gif",
+        image: "/images/blender/guitarReduced.gif",
         alt: "Guitar",
         title: "Guitar",
         description: "This was my first ever model made the Maya. I wanted to create an object from one of my favorite hobbies, which is playing the guitar. Modeled in Maya, textured in Substance Painter.",
     },
     {
-        image: "/images/blender/rubikscubewalking.gif",
+        image: "/images/blender/rubikscubewalkingreduced.gif",
         alt: "Rubik's Cube Walking Animation",
         title: "Rubik's Cube Walking",
         description: "Solving Rubik's Cubes is one of my longest and most cherished hobbies. Having a collection of over 100 cubes, I knew I had to incorporate one of the things I identify with into my modeling and animation.",
@@ -1200,6 +1200,7 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
                             width={700}
                             height={467}
                             className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
                         />
                         {project.featured && (
                             <div className="absolute top-4 right-4 px-3 py-1.5 bg-gradient-to-r from-emerald-500 to-green-500 text-white text-sm font-bold rounded-full flex items-center gap-1 z-20">
@@ -1440,6 +1441,7 @@ const Projects = () => {
                                                     width={500}
                                                     height={500}
                                                     className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                                                    loading="lazy"
                                                 />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                                     <h3 className="text-white font-bold text-xl">{project.title}</h3>
