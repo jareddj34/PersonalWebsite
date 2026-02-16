@@ -156,7 +156,7 @@ const jobs = [
                     Developed XR projects in Unity (C#), which have world impacts that span from healthcare training, education, and narrative storytelling
                 </li>
                 <li>
-                    Implemented gameplay systems, including player movement, interactable objects, and NPC AI movement
+                    Implemented gameplay systems, including player movement, interactable objects, weapons mechanics, and NPC AI movement
                 </li>
                 <li>
                     Led teams of 3D modelers, UI/UX Designers, and other Unity developers to deliver fully deployable projects
@@ -165,6 +165,28 @@ const jobs = [
             </>,
         pic: "/images/vesl.png",
         link: "https://xr.miami.edu/labs/the-vesl/index.html",
+    },
+    {
+        name: "The Miami Hurricane",
+        title: "Graphic Designer",
+        date: "October 2025 - Present",
+        location: "University of Miami",
+        description:
+            <>
+            <ul className="list-disc list-inside space-y-2">
+                <li>
+                    Designed infographics and data visualizations for articles, improving reader engagement and clarity
+                </li>
+                <li>
+                    Created layouts and visual assets for print and digital publications using Adobe Illustrator, Photoshop, and InDesign 
+                </li>
+                <li>
+                    Produced promotional graphics and social media visuals, increasing user engagement 
+                </li>
+            </ul>
+            </>,
+        pic: "/images/TMH.png",
+        link: "https://themiamihurricane.com/",
     },
     {
         name: "Corsair - Origin PC",
@@ -215,7 +237,7 @@ const jobs = [
         name: "iD Tech",
         title: "Instructor",
         date: "May - July 2025",
-        location: "Summer Camp",
+        location: "UC Berkeley",
         description:
             <>
                 <ul className="list-disc list-inside space-y-2">

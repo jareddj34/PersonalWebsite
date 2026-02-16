@@ -449,29 +449,33 @@ const Navbar: React.FC = () => {
                                 Experience
                             </Link>
                             
-                            <div className="px-4 py-2 text-sm font-semibold text-slate-500 uppercase tracking-wide">
+                            <a className="px-4 py-2 text-sm font-semibold text-slate-500 uppercase tracking-wide" onClick={() => handleNavClick("projects")}>
                                 Projects
-                            </div>
+                            </a>
                             <a
                                 href="/#games"
+                                onClick={() => handleNavClick("projects")}
                                 className="pl-8 pr-4 py-2 text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
                             >
                                 Games
                             </a>
                             <a
                                 href="/#websites"
+                                onClick={() => handleNavClick("projects")}
                                 className="pl-8 pr-4 py-2 text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
                             >
                                 Websites
                             </a>
                             <a
                                 href="/#animations"
+                                onClick={() => handleNavClick("projects")}
                                 className="pl-8 pr-4 py-2 text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
                             >
                                 3D Models & Animations
                             </a>
                             <a
                                 href="/#aftereffects"
+                                onClick={() => handleNavClick("projects")}
                                 className="pl-8 pr-4 py-2 text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
                             >
                                 After Effects
@@ -479,6 +483,7 @@ const Navbar: React.FC = () => {
                             
                             <a
                                 href="/#figmas"
+                                onClick={() => handleNavClick("projects")}
                                 className="pl-8 pr-4 py-2 text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
                             >
                                 Figmas

@@ -94,13 +94,13 @@ const skills = [
     { skill: "Blender", category: "design" },
     { skill: "Unreal Engine", category: "game" },
     { skill: "Maya", category: "design" },
+    { skill: "Animation", category: "design" },
     { skill: "C#", category: "code" },
     { skill: "C++", category: "code" },
     { skill: "Java", category: "code" },
     { skill: "JavaScript", category: "code" },
     { skill: "TypeScript", category: "code" },
-    { skill: "HTML", category: "web" },
-    { skill: "React", category: "web" },
+    { skill: "HTML", category: "code" },
     { skill: "Python", category: "code" },
     { skill: "R", category: "code" },
     { skill: "MySQL", category: "code" },
@@ -246,21 +246,6 @@ I am always eager to be learning more about new types of technologies and trends
                                     </div>
                                 </div>
 
-                                <div>
-                                    <h4 className="text-sm font-semibold text-slate-600 mb-3 uppercase tracking-wide">
-                                        Web Development
-                                    </h4>
-                                    <div className="flex flex-wrap gap-2">
-                                        {skills.filter(s => s.category === "web").map((item, idx) => (
-                                            <span
-                                                key={idx}
-                                                className="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 border border-blue-200"
-                                            >
-                                                {item.skill}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
 
                                 <div>
                                     <h4 className="text-sm font-semibold text-slate-600 mb-3 uppercase tracking-wide">
