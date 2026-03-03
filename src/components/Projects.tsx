@@ -1083,9 +1083,10 @@ const games = [
         description: "A Unity applications that puts the user through tests to detect if they have minor cognitive impairment of Alzheimer's disease. The application is ran through a VR headset, giving the user full immersion in the experience. Partnered with Dr. Ubbo Visser and Dr. Christine Lisetti.",
         image: "/images/VisserProjectThumbnail.png",
         github: "",
-        link: "https://docs.google.com/document/d/1cCCPMQl8vztD1VaHMsl3QkHKZ9jIcGALblYXA9DDlik/edit?tab=t.0",
-        piclink: "https://docs.google.com/document/d/1cCCPMQl8vztD1VaHMsl3QkHKZ9jIcGALblYXA9DDlik/edit?tab=t.0",
+        link: "/cognitive",
+        piclink: "/cognitive",
         youtubelink: "",
+        featured: true,
     },
     {
         name: "ARchaeology",

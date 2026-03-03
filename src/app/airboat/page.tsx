@@ -128,10 +128,16 @@ export default function AirboatPage() {
         <div className="min-h-screen">
             {/* Hero Section */}
             <div className="relative bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-950 text-white py-24 px-6">
-                <div className="absolute inset-0 bg-[url('/images/swampocalypse.jpg')] opacity-10 bg-cover bg-center"></div>
+                <div className="absolute inset-0 bg-[url('/images/swampocalypse.jpg')] opacity-30 bg-cover bg-center"></div>
                 <div className="relative max-w-5xl mx-auto text-center">
-                    <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-emerald-500/20 text-emerald-300 rounded-full border border-emerald-500/30">
-                        VR Experience · Unity · Motion Simulation
+                    <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-emerald-500/20 text-emerald-300 rounded-full border border-emerald-500/30 mx-1">
+                        VR Experience
+                    </div>
+                    <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-emerald-500/20 text-emerald-300 rounded-full border border-emerald-500/30 mx-1">
+                        Unity
+                    </div>
+                    <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-emerald-500/20 text-emerald-300 rounded-full border border-emerald-500/30 mx-1">
+                        Motion Simulation
                     </div>
                     <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-green-300 bg-clip-text text-transparent">
                         Swampocalypse
