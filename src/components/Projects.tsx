@@ -1034,6 +1034,16 @@ const games = [
         featured: true,
     },
     {
+        name: "Rythm Warrior",
+        description: "EARLY DEVELOPMENT | A music-based action game where guitar strums transform into powerful musical projectiles. Rock out while defeating enemies with the power of sound!",
+        image: "/images/guitar-game/GameplaySS.png",
+        github: "",
+        link: "/newgame",
+        piclink: "/newgame",
+        youtubelink: "",
+        featured: true,
+    },
+    {
         name: "Get Gator Back",
         description: "A 2D platformer where you play as Al or Ally the Alligator, and help them get back to their homes by exploring various environments and taking out invasive species along the way.",
         image: "/images/GetGatorBack.png",
