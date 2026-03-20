@@ -154,6 +154,23 @@ import { Calendar } from "lucide-react";
 
 const posts = [
     {
+        title: "GDC Festival of Gaming",
+        date: "March 2025",
+        description: (
+            <>
+                I had the amazing opportunity to attend the GDC Festival of Gaming in San Francisco, the largest annual conference for video game developers! 
+
+Throughout the week, I was able to go to several keynote talks, panels, and networking events where I learned more about the creative and technical sides of the gaming industry, while also connecting with amazing developers, artists, and industry leaders.
+
+Some notable events/places I went to: Leadership Summit powered by AWS for Games, Get in the Game Mentorship Workshops with teams from Discord, Meta Oculus, Sony Interactive Entertainment, Netflix Games, and Double Fine Productions, Nite to Unite: ESA Foundation Gala & Networking Reception, The Game Developers Choice Awards
+
+These experiences gave me valuable insights into the future of the industry and what it takes to build impactful games.
+            </>
+        ),
+        pic: "/images/GDC.JPEG",
+        alt: "GDC Picture",
+    },
+    {
         title: "Game Jam Win",
         date: "December 2025",
         description: (
