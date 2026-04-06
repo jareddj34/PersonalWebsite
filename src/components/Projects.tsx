@@ -1053,6 +1053,15 @@ const games = [
         youtubelink: "",
     },
     {
+        name: "Plant Puzzles",
+        description: "EARLY DEVELOPMENT | A reimagined version of the first game I created, Flower Adventures. Created in Unreal Engine.",
+        image: "/images/PlantPuzzles.png",
+        github: "",
+        link: "https://drive.google.com/file/d/1OtDcQxWBTN3Y7287u3FzS6Dp8eELU2lD/view?usp=sharing",
+        piclink: "https://drive.google.com/file/d/1OtDcQxWBTN3Y7287u3FzS6Dp8eELU2lD/view?usp=sharing",
+        youtubelink: "",
+    },
+    {
         name: "Flower Adventures",
         description: "A video game I made for my Game Programming class. Focuses on a flower that fights bugs and traverses through obstacles. Created in Unity.",
         image: "/images/FlowerAdventures.png",
