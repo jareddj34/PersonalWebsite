@@ -155,19 +155,19 @@ export default function AirboatPage() {
             <div className="bg-gradient-to-b from-white to-slate-50 py-20">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid md:grid-cols-4 gap-6 mb-6">
-                        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow duration-300">
                             <div className="text-emerald-600 font-bold text-sm mb-2">PROJECT TYPE</div>
                             <div className="text-slate-900 font-semibold text-lg">Location-Based VR Experience</div>
                         </div>
-                        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow duration-300">
                             <div className="text-emerald-600 font-bold text-sm mb-2">DURATION</div>
                             <div className="text-slate-900 font-semibold text-lg">Fall 2024 - Present</div>
                         </div>
-                        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow duration-300">
                             <div className="text-emerald-600 font-bold text-sm mb-2">MY ROLE</div>
                             <div className="text-slate-900 font-semibold text-lg">Lead Developer & Team Lead</div>
                         </div>
-                        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow duration-300">
                             <div className="text-emerald-600 font-bold text-sm mb-2">PLATFORM</div>
                             <div className="text-slate-900 font-semibold text-lg">Meta Quest 3 + Motion Rig</div>
                         </div>
@@ -253,7 +253,7 @@ export default function AirboatPage() {
                     <div className="order-1 md:order-2">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/swampocalypse.jpg"
+                                src="/images/airboat/SwampocalypseThumbnail.png"
                                 alt="Swampocalypse gameplay"
                                 width={700}
                                 height={467}
@@ -314,6 +314,83 @@ export default function AirboatPage() {
                             title="Swampocalypse gameplay video"  
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         ></iframe>
+                    </div>
+                </div>
+            </div>
+
+            {/* Visual Showcase */}
+            <div className="bg-slate-50 py-20">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-slate-900 mb-4">Visual Design Elements</h2>
+                        <div className="w-16 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                        <p className="text-lg text-slate-600">3D models and environments</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="p-4">
+                                <h3 className="font-bold text-slate-900 mb-3">Airboat Model</h3>
+                                <Image
+                                    src="/images/airboat/airboat.png"
+                                    alt="Airboat model"
+                                    width={600}
+                                    height={400}
+                                    className="rounded-lg w-full h-auto mb-3"
+                                />
+                                <p className="text-sm text-slate-600">
+                                    Model of the airboat in the experience, modeled in Maya and textured in Substance Painter.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="p-4">
+                                <h3 className="font-bold text-slate-900 mb-3">Zombies</h3>
+                                <Image
+                                    src="/images/airboat/zombies.png"
+                                    alt="Zombies in the game"
+                                    width={600}
+                                    height={400}
+                                    className="rounded-lg w-full h-auto mb-3"
+                                />
+                                <p className="text-sm text-slate-600">
+                                    Models of the zombies, sourced from the Unity Asset Store, integrated with custom animations and ragdoll physics to create dynamic enemy behavior.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="p-4">
+                                <h3 className="font-bold text-slate-900 mb-3">Alligator</h3>
+                                <Image
+                                    src="/images/airboat/gator.png"
+                                    alt="Alligator model"
+                                    width={600}
+                                    height={400}
+                                    className="rounded-lg w-full h-auto mb-3"
+                                />
+                                <p className="text-sm text-slate-600">
+                                    Alligator model sourced from the Unity Asset Store. Implemented in experience to add environmental authenticity and additional threats for the player to navigate around, enhancing immersion and gameplay variety.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="p-4">
+                                <h3 className="font-bold text-slate-900 mb-3">Mutated Iguana</h3>
+                                <Image
+                                    src="/images/airboat/finalBoss.png"
+                                    alt="Mutated Iguana model"
+                                    width={600}
+                                    height={400}
+                                    className="rounded-lg w-full h-auto mb-3"
+                                />
+                                <p className="text-sm text-slate-600">
+                                    Mutated Iguana model sourced from the Unity Asset Store. Implemented as the final boss character in the experience, featuring custom animations and challenging gameplay mechanics.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -503,7 +580,7 @@ export default function AirboatPage() {
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-white rounded-xl p-8 shadow-lg border border-slate-100">
+                        <div className="bg-white rounded-xl p-8 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="p-3 bg-yellow-100 rounded-lg">
                                     <AlertCircle className="w-6 h-6 text-yellow-600" />
@@ -516,7 +593,7 @@ export default function AirboatPage() {
                             </div>
                         </div>
 
-                        <div className="bg-white rounded-xl p-8 shadow-lg border border-slate-100">
+                        <div className="bg-white rounded-xl p-8 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="p-3 bg-red-100 rounded-lg">
                                     <Cpu className="w-6 h-6 text-red-600" />
@@ -529,7 +606,7 @@ export default function AirboatPage() {
                             </div>
                         </div>
 
-                        <div className="bg-white rounded-xl p-8 shadow-lg border border-slate-100">
+                        <div className="bg-white rounded-xl p-8 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="p-3 bg-purple-100 rounded-lg">
                                     <Zap className="w-6 h-6 text-purple-600" />
