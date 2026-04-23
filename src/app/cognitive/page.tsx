@@ -186,14 +186,14 @@ export default function CognitiveTestsPage() {
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8">
                         <iframe 
                             className="w-full aspect-video"
-                            src="https://drive.google.com/file/d/1RExB_lA_y4O0GPAAVuW6EgEDYijflIOq/preview" 
+                            src="https://drive.google.com/file/d/1aqx9bf-druf4OEAXA89vpXfFLBxMRmwL/preview"
                             title="VR Cognitive Tests walkthrough video"  
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         ></iframe>
                     </div>
                     <div className="text-center">
                         <a 
-                            href="https://drive.google.com/file/d/1x75NXolKhomPOPi_yXJWgX4UbQdPiHWm/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1ifI91nM_c70mtkrUAmJlrfxwZHgaA9SF/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"

@@ -318,6 +318,53 @@ export default function AirboatPage() {
                 </div>
             </div>
 
+            {/* Game Rules & Objectives */}
+            <div className="max-w-7xl mx-auto px-6 py-20">
+                <div className="text-center mb-12">
+                    <h2 className="text-4xl font-bold text-slate-900 mb-4">Rules & Objectives</h2>
+                    <div className="w-16 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                    <p className="text-lg text-slate-600">Balancing action with education</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-8 shadow-lg border border-emerald-100">
+                    <p className="text-lg text-slate-700 mb-6 leading-relaxed">
+                        The main purpose is to deliver a fun and educational experience, where players eliminate zombies 
+                        while learning about environmental conservation. Each level presents unique obstacles and events 
+                        that players must navigate to stop the factory&apos;s pollution.
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <div className="space-y-3">
+                            <div className="flex items-start gap-3">
+                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                <span className="text-slate-700"><strong>Maintain boat health</strong> to avoid destruction</span>
+                            </div>
+                            <div className="flex items-start gap-3">
+                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                <span className="text-slate-700"><strong>Stop the factory</strong> from further polluting the environment</span>
+                            </div>
+                            <div className="flex items-start gap-3">
+                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                <span className="text-slate-700"><strong>Complete objectives</strong> within time limits</span>
+                            </div>
+                        </div>
+                        <div className="space-y-3">
+                            <div className="flex items-start gap-3">
+                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                <span className="text-slate-700"><strong>Eliminate zombies</strong> and mutated creatures</span>
+                            </div>
+                            <div className="flex items-start gap-3">
+                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                <span className="text-slate-700"><strong>Avoid harming</strong> native species</span>
+                            </div>
+                            <div className="flex items-start gap-3">
+                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                <span className="text-slate-700"><strong>Learn environmental facts</strong> throughout the journey</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Visual Showcase */}
             <div className="bg-slate-50 py-20">
                 <div className="max-w-7xl mx-auto px-6">
@@ -622,52 +669,7 @@ export default function AirboatPage() {
                 </div>
             </div>
 
-            {/* Game Rules & Objectives */}
-            <div className="max-w-7xl mx-auto px-6 py-20">
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-slate-900 mb-4">Rules & Objectives</h2>
-                    <div className="w-16 h-1 bg-emerald-500 mx-auto mb-6"></div>
-                    <p className="text-lg text-slate-600">Balancing action with education</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-8 shadow-lg border border-emerald-100">
-                    <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                        The main purpose is to deliver a fun and educational experience, where players eliminate zombies 
-                        while learning about environmental conservation. Each level presents unique obstacles and events 
-                        that players must navigate to stop the factory&apos;s pollution.
-                    </p>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Maintain boat health</strong> to avoid destruction</span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Stop the factory</strong> from further polluting the environment</span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Complete objectives</strong> within time limits</span>
-                            </div>
-                        </div>
-                        <div className="space-y-3">
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Eliminate zombies</strong> and mutated creatures</span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Avoid harming</strong> native species</span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Learn environmental facts</strong> throughout the journey</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
             {/* The Rig Section */}
             <div className="bg-slate-900 text-white py-20">
