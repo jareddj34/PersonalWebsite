@@ -165,8 +165,10 @@ const HeroSection = () => {
                                 size="lg"
                                 className="bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
                                 onClick={() => {
-                                    downloadFile(
-                                        "https://jareddemonteiro.vercel.app/Jared_deMonteiro_Resume.pdf"
+                                    window.open(
+                                        "https://jareddemonteiro.vercel.app/Jared_deMonteiro_Resume.pdf",
+                                        "_blank",
+                                        "noopener,noreferrer"
                                     );
                                 }}
                             >

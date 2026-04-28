@@ -224,6 +224,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

@@ -925,7 +925,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import PhotoAlbum from "react-photo-album";
-import { ExternalLink, Github, Youtube, Sparkles, Gamepad2, Globe, Film, Palette, Figma, Newspaper, LayoutGrid } from "lucide-react";
+import { ExternalLink, Github, Youtube, Sparkles, Gamepad2, Globe, Film, Palette, Figma, Newspaper, LayoutGrid, Trophy } from "lucide-react";
 import {
   Popover,
   PopoverContent,
@@ -1041,6 +1041,16 @@ const games = [
         github: "",
         link: "https://steinvisionstudios.itch.io/get-gator-back",
         piclink: "https://steinvisionstudios.itch.io/get-gator-back",
+        youtubelink: "",
+        award: true,
+    },
+    {
+        name: "Chicken Hunt",
+        description: "A first person game where you hunt down chickens running loose in the land. Made in Unity.",
+        image: "/images/ChickenHunt.png",
+        github: "",
+        link: "https://ppare34.itch.io/chicken-hunt",
+        piclink: "https://ppare34.itch.io/chicken-hunt",
         youtubelink: "",
     },
     {
@@ -1279,6 +1289,12 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
                             <div className="absolute top-4 right-4 px-3 py-1.5 bg-gradient-to-r from-emerald-500 to-green-500 text-white text-sm font-bold rounded-full flex items-center gap-1 z-20">
                                 <Sparkles className="w-4 h-4" />
                                 Featured
+                            </div>
+                        )}
+                        {project.award && (
+                            <div className="absolute top-4 right-4 px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white text-sm font-bold rounded-full flex items-center gap-1 z-20">
+                                <Trophy className="w-4 h-4" />
+                                Award Winning
                             </div>
                         )}
                     </div>
