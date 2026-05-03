@@ -90,7 +90,7 @@ export default function PenguinPage() {
                         Penguin Game
                     </h1>
                     <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
-                        A top down RPG where you play as a penguin, defending his icy home. Inspired by Link's Awakening
+                        A top down RPG where you play as a penguin, defending his icy home. Inspired by Link&apos;s Awakening
                     </p>
     
                 </div>
