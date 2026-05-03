@@ -925,7 +925,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import PhotoAlbum from "react-photo-album";
-import { ExternalLink, Github, Youtube, Sparkles, Gamepad2, Globe, Film, Palette, Figma, Newspaper, LayoutGrid, Trophy } from "lucide-react";
+import { ExternalLink, Github, Youtube, Sparkles, Gamepad2, Globe, Film, Palette, Figma, Newspaper, LayoutGrid, Trophy, SquareCode } from "lucide-react";
 import {
   Popover,
   PopoverContent,
@@ -1054,6 +1054,15 @@ const games = [
         youtubelink: "",
     },
     {
+        name: "Penguin Game",
+        description: "A top down RPG where you play as a penguin, defending his icy home. Inspired by Link's Awakening.",
+        image: "/images/penguin/thumbnail.png",
+        github: "",
+        link: "/penguin",
+        piclink: "/penguin",
+        youtubelink: "",
+    },
+    {
         name: "Temikki Garden",
         description: "A mobile AR application to promote the emotional well-being of children during long hospital stays. Children can build, modify, and play in a living virtual garden while reminded of their accomplishments.",
         image: "/images/temikki.jpg",
@@ -1116,6 +1125,7 @@ const games = [
         link: "https://drive.google.com/file/d/1OtDcQxWBTN3Y7287u3FzS6Dp8eELU2lD/view?usp=sharing",
         piclink: "https://drive.google.com/file/d/1OtDcQxWBTN3Y7287u3FzS6Dp8eELU2lD/view?usp=sharing",
         youtubelink: "",
+        early: true,
     },
     {
         name: "Rythm Warrior",
@@ -1125,7 +1135,7 @@ const games = [
         link: "/newgame",
         piclink: "/newgame",
         youtubelink: "",
-        featured: true,
+        early: true,
     },
 ];
 
@@ -1295,6 +1305,12 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
                             <div className="absolute top-4 right-4 px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white text-sm font-bold rounded-full flex items-center gap-1 z-20">
                                 <Trophy className="w-4 h-4" />
                                 Award Winning
+                            </div>
+                        )}
+                        {project.early && (
+                            <div className="absolute top-4 right-4 px-3 py-1.5 bg-gradient-to-r from-red-500 to-red-600 text-white text-sm font-bold rounded-full flex items-center gap-1 z-20">
+                                <SquareCode className="w-4 h-4" />
+                                Early Development
                             </div>
                         )}
                     </div>

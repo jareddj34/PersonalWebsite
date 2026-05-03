@@ -14,7 +14,7 @@ export default function CognitiveTestsPage() {
                     <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-emerald-500/20 text-emerald-300 rounded-full border border-emerald-500/30">
                         VR Healthcare · Unity · AI Integration
                     </div>
-                    <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+                    <h1 className="text-6xl md:text-7xl font-bold mb-6 pb-3 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
                         VR Cognitive Impairment Tests
                     </h1>
                     <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
