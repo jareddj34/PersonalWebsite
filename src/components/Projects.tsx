@@ -1061,6 +1061,7 @@ const games = [
         link: "/penguin",
         piclink: "/penguin",
         youtubelink: "",
+        early: true,
     },
     {
         name: "Temikki Garden",

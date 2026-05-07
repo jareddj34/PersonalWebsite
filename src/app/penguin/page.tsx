@@ -8,6 +8,15 @@ import Footer from "@/components/Footer";
 // Developer Log Entries - ADD NEW ENTRIES AT THE TOP!
 const devLogs = [
     {
+        date: "May 4, 2026",
+        title: "Ice Sliding, Scene Transitions, & Chests",
+        type: ["Development"],
+        description: "Got ice sliding system working, like the puzzles in Pokemon. Transition in between scenes when player enters buildings. Opening chests work.",
+        images: [],
+        videos: [{ src: "", title: "Demo 1" }],
+        tags: ["Unity", "C#"]
+    },
+    {
         date: "May 2, 2026",
         title: "Snowballs, Staggers, & NPC Slides",
         type: ["Development"],
