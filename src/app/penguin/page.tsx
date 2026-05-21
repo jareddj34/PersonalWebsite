@@ -8,17 +8,26 @@ import Footer from "@/components/Footer";
 // Developer Log Entries - ADD NEW ENTRIES AT THE TOP!
 const devLogs = [
     {
+        date: "May 20, 2026",
+        title: "Igloo, World State Manager, Polishing",
+        type: ["Development", "Modeling & Animations"],
+        description: "Moving into the next scene much smoother. World State Manager ensures world information stays consistent between scenes (chests opened, player stats, etc). Rotations for player more snappy. Player flashes red when taking damage.",
+        images: [],
+        videos: [{ src: "https://drive.google.com/file/d/1IImVLr-nRdhW4wAIco8RCrVA206KYL9S/preview", title: "Demo 2" }],
+        tags: ["Unity", "C#", "Blender"]
+    },
+    {
         date: "May 4, 2026",
-        title: "Ice Sliding, Scene Transitions, & Chests",
+        title: "Ice Sliding, Scene Transitions, Chests",
         type: ["Development"],
         description: "Got ice sliding system working, like the puzzles in Pokemon. Transition in between scenes when player enters buildings. Opening chests work.",
         images: [],
-        videos: [{ src: "", title: "Demo 1" }],
+        videos: [],
         tags: ["Unity", "C#"]
     },
     {
         date: "May 2, 2026",
-        title: "Snowballs, Staggers, & NPC Slides",
+        title: "Snowballs, Staggers, NPC Slides",
         type: ["Development"],
         description: "Got stagger and hit animations working for the seal enemy. Fixed bugs. Added a snowball throw mechanic. Penguin NPC now slides around.",
         images: [],
@@ -36,7 +45,7 @@ const devLogs = [
     },
     {
         date: "April 30, 2026",
-        title: "NPCs, Health & A Broken Package",
+        title: "NPCs, Health, A Broken Package",
         type: ["Development"],
         description: "Made a penguin NPC and added a health collectable with a basic pickup tutorial. Added space-to-continue text in the dialogue line presenter and tweaked the walk animation. Tried importing a food asset pack which broke the entire project — had to revert to a pre-GitHub backup and recover everything.",
         images: [],
@@ -45,7 +54,7 @@ const devLogs = [
     },
     {
         date: "April 29, 2026",
-        title: "Combat, Dialogue & Game State",
+        title: "Combat, Dialogue, Game State",
         type: ["Development"],
         description: "Got sword slash effect working. Imported sword models and added attack animations and mechanics. Built an interaction mechanic and added a Zelda-style icon popup animation. Added ice rocks to the environment. Modularized item scripting and built a collectables system. Created a GameState manager to cleanly separate NPC dialogue from item pickup dialogue.",
         images: [],
@@ -285,13 +294,30 @@ export default function PenguinPage() {
                         <p className="text-lg text-slate-600">See the game in action!</p>
                     </div>
                     
-                    <div className="rounded-xl overflow-hidden shadow-md">
-                        <iframe 
-                            className="w-full aspect-video"
-                            src="https://drive.google.com/file/d/1yGVa_SuO_YgusffhDTRVoDs8cKDTrvan/preview" 
-                            title="Penguin game demo 1"  
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        ></iframe>
+                    <div className="grid gap-8">
+                        <div className="rounded-xl overflow-hidden shadow-md">
+                            <iframe 
+                                className="w-full aspect-video"
+                                src="https://drive.google.com/file/d/1yGVa_SuO_YgusffhDTRVoDs8cKDTrvan/preview" 
+                                title="Penguin game demo 1"  
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            ></iframe>
+                            <div className="bg-slate-100 px-4 py-2 text-sm text-slate-700 font-medium">
+                                Demo 1
+                            </div>
+                        </div>
+
+                        <div className="rounded-xl overflow-hidden shadow-md">
+                            <iframe 
+                                className="w-full aspect-video"
+                                src="https://drive.google.com/file/d/1IImVLr-nRdhW4wAIco8RCrVA206KYL9S/preview" 
+                                title="Penguin game demo 1"  
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            ></iframe>
+                            <div className="bg-slate-100 px-4 py-2 text-sm text-slate-700 font-medium">
+                                Demo 2
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -351,14 +377,14 @@ export default function PenguinPage() {
 
             {/* Tech Stack */}
             <div className="bg-slate-50 py-20">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="max-w-3xl mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-slate-900 mb-4">Technology Stack</h2>
                         <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-6"></div>
                     </div>
 
-                    <div className="grid md:grid-cols-4 gap-6">
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <div className="bg-white rounded-xl p-6 border border-slate-200">
                             <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
                                 <Code className="w-5 h-5 text-purple-600" />
                                 Development
@@ -370,7 +396,7 @@ export default function PenguinPage() {
                             </ul>
                         </div>
 
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                        <div className="bg-white rounded-xl p-6 border border-slate-200">
                             <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
                                 <ImageIcon className="w-5 h-5 text-pink-600" />
                                 3D Assets
@@ -379,30 +405,6 @@ export default function PenguinPage() {
                                 <li>• Blender 3D</li>
                                 <li>• Character Modeling</li>
                                 <li>• Asset Rigging</li>
-                            </ul>
-                        </div>
-
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                            <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
-                                <Music className="w-5 h-5 text-cyan-600" />
-                                Audio (Planned)
-                            </h3>
-                            <ul className="space-y-2 text-slate-700 text-sm">
-                                <li>• FMOD / Wwise</li>
-                                <li>• Dynamic Music</li>
-                                <li>• Sound Effects</li>
-                            </ul>
-                        </div>
-
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                            <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
-                                <Play className="w-5 h-5 text-orange-600" />
-                                Platform (TBD)
-                            </h3>
-                            <ul className="space-y-2 text-slate-700 text-sm">
-                                <li>• PC (Windows)</li>
-                                <li>• Consoles (Maybe)</li>
-                                <li>• Mobile (Exploring)</li>
                             </ul>
                         </div>
                     </div>

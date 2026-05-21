@@ -443,14 +443,14 @@ export default function GuitarGamePage() {
 
             {/* Tech Stack */}
             <div className="bg-slate-50 py-20">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="max-w-5xl mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-slate-900 mb-4">Technology Stack</h2>
                         <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-6"></div>
                     </div>
 
-                    <div className="grid md:grid-cols-4 gap-6">
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                    <div className="grid md:grid-cols-3 gap-6">
+                        <div className="bg-white rounded-xl p-6 border border-slate-200">
                             <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
                                 <Code className="w-5 h-5 text-purple-600" />
                                 Development
@@ -462,7 +462,7 @@ export default function GuitarGamePage() {
                             </ul>
                         </div>
 
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                        <div className="bg-white rounded-xl p-6 border border-slate-200">
                             <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
                                 <ImageIcon className="w-5 h-5 text-pink-600" />
                                 3D Assets
@@ -474,29 +474,18 @@ export default function GuitarGamePage() {
                             </ul>
                         </div>
 
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                        <div className="bg-white rounded-xl p-6 border border-slate-200">
                             <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
                                 <Music className="w-5 h-5 text-cyan-600" />
                                 Audio (Planned)
                             </h3>
                             <ul className="space-y-2 text-slate-700 text-sm">
-                                <li>• FMOD / Wwise</li>
+                                <li>• FMOD</li>
                                 <li>• Dynamic Music</li>
                                 <li>• Sound Effects</li>
                             </ul>
                         </div>
 
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                            <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
-                                <Play className="w-5 h-5 text-orange-600" />
-                                Platform (TBD)
-                            </h3>
-                            <ul className="space-y-2 text-slate-700 text-sm">
-                                <li>• PC (Windows)</li>
-                                <li>• Consoles (Maybe)</li>
-                                <li>• Mobile (Exploring)</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
