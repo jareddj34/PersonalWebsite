@@ -8,6 +8,15 @@ import Footer from "@/components/Footer";
 // Developer Log Entries - ADD NEW ENTRIES AT THE TOP!
 const devLogs = [
     {
+        date: "May 22, 2026",
+        title: "Fox, New NPC, Ice Spikes",
+        type: ["Development", "Modeling & Animations"],
+        description: "Modeled and animated a red fox NPC. Animations: idle, walk, snow dive, hit, attack. Created an NPC who can throw snowballs. Modeled ice spikes, can be pushed when holding shield.",
+        images: [{src: "/images/penguin/FoxThumbnail.png", alt: "Fox model in Blender"}],
+        videos: [],
+        tags: ["Unity", "C#", "Blender"]
+    },
+    {
         date: "May 20, 2026",
         title: "Igloo, World State Manager, Polishing",
         type: ["Development", "Modeling & Animations"],
