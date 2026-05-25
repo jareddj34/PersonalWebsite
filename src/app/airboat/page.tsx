@@ -1,122 +1,3 @@
-// import React from "react";
-// import Image from "next/image";
-// import { Video } from "lucide-react";
-// import VideoPlayer from "../../components/VideoPlayer";
-// import Footer from "@/components/Footer";
-
-// export default function AirboatPage() {
-//     return (
-//         <>
-//         <div className="min-h-screen flex flex-col items-center justify-start mt-14">
-//             <h1 className="text-center text-6xl font-bold mb-6">Swampocalypse</h1>
-
-//             <p className="text-xl mt-4 max-w-xl mx-auto text-center">
-//             A location-based VR experience combining environmental storytelling, motion simulation, and zombie survival.
-//             </p>
-            
-
-//             <h2 className="text-center text-3xl font-bold mb-2 mt-12">About the project</h2>
-//             <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
-//             <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left mb-14">
-//                 <div className="md:w-1/2">
-//                     <Image
-//                         src="/images/swampocalypse.jpg"
-//                         alt="Airboat in swamp"
-//                         width={600}
-//                         height={400}
-//                         className="rounded-lg"
-//                     />
-//                 </div>
-//                 <div className="md:w-1/2">
-//                     <p className="text-justify justify-center items-center">Swampocalypse is a location-based VR experience set in a post-apocalyptic Miami Everglades. Players 
-//                     pilot a rusty airboat through dangerous and polluted swamps, using the Qubic QS-S25 motion rig, which 
-//                     mirrors in-game movement for a fully immersive experience. As they fight off mutated creatures and 
-//                     zombies, players explore the Everglades while collecting new weapons and learning important facts and 
-//                     information about the environment, teaching them ways humans can prevent further ruining the 
-//                     Everglades.
-//                     </p>
-//                 </div>
-                
-//             </div>
-
-//             <div className="mb-20">
-//                 <h2 className="text-center text-3xl font-bold mb-2">Gameplay</h2>
-//                 <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
-//                 <div className="px-4 space-y-10">
-//                     <iframe width="900" height="506" src="https://www.youtube.com/embed/GFWiE44Igk4?si=PbhBEUxVGQ78LVVP" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-//                     {/* <VideoPlayer src="/videos/RigFootage.mp4" poster="" controls autoPlay={false} muted={false} /> */}
-//                 </div>
-//             </div>
-
-//             <div>
-//                 <h2 className="text-center text-3xl font-bold mb-2">My Role</h2>
-//                 <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
-//                 <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left mb-14">
-//                     <div className="md:w-1/2">
-//                         <p className="text-justify justify-center items-center text-xl">I am the lead developer of this project, so I am responsible for nearly all the aspects of the Unity 
-//                         application, implementing everyone else&apos;s work in the game, and connecting the program to the physical 
-//                         rig. I lead a team of very talented individuals, including 3D modelers, UI/UX designers, and sound 
-//                         engineers. During our weekly meetings, we discuss the work we have done, how we can implement it into 
-//                         the game, and the future steps we have to take. Collaborating with a great team really inspires and 
-//                         motivates me to do my best work, and it is very rewarding to see all of our work come together to make a 
-//                         great experience. 
-//                         </p>
-//                     </div>
-//                     <div className="md:w-1/2">
-//                         <h3 className="text-xl mb-2">
-//                             Mechanics that I developed:
-//                         </h3>
-//                         <ul className="list-disc ml-6 space-y-3 text-justify">
-//                             <li>
-//                                 <strong>Vehicle movement:</strong> After field testing at an airboat tour in the Everglades, I implemented realistic boat physics and controls to match the feel of driving an airboat through the Miami Everglades.
-//                             </li>
-//                             <li>
-//                                 <strong>Weapon System:</strong> Multiple weapons (crossbow, shotgun, assault rifle) with unique mechanics. I designed firing mechanics, interactions, and the ammo system.
-//                             </li>
-//                             <li>
-//                                 <strong>Enemies:</strong> Zombies with health, movement, and ragdoll physics. The main boss has multiple stages and attack patterns used during the final scene.
-//                             </li>
-//                             <li>
-//                                 <strong>Level Design:</strong> Originally a racing simulator concept, levels were redesigned into environmental, zombie-focused stages that reflect Everglades elements with apocalyptic twists.
-//                             </li>
-//                             <li>
-//                                 <strong>Optimization:</strong> Targeting Meta Quest 3 required performance constraints; I implemented object culling and less-dense environments to maintain max frame rate.
-//                             </li>
-//                             <li>
-//                                 <strong>Hardware Integration:</strong> Integrated software with physical rigs — from an Arduino-based in-house rig to the Qubic system using MotionSDK — and translated boat physics into rig movement.
-//                             </li>
-//                         </ul>
-//                     </div>
-                
-//                 </div>
-//             </div>
-
-//             <div>
-//                 <h2 className="text-center text-3xl font-bold mb-2">The Rig</h2>
-//                 <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
-//                 <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left mb-14">
-//                     <div className="md:w-1/2">
-//                         <Image
-//                             src="/images/qubic.webp"
-//                             alt="Airboat in swamp"
-//                             width={600}
-//                             height={400}
-//                             className="rounded-lg"
-//                         />
-//                     </div>
-//                     <div className="md:w-1/2">
-//                         <p className="text-justify justify-center items-center">We use the QUBIC SYSTEM QS-S25 Advanced Motion Cockpit, a 6-DOF motion platform designed for 
-//                             high-fidelity simulation experiences.
-//                         </p>
-//                     </div>
-                
-//                 </div>
-//             </div>
-//         </div>
-//         <Footer/>
-//         </>
-//     );
-// }
 import React from "react";
 import Image from "next/image";
 import { Video, Zap, Target, Users, Cpu, Gamepad2, Trophy, AlertCircle, Lightbulb, TrendingUp, CheckCircle } from "lucide-react";
@@ -318,47 +199,85 @@ export default function AirboatPage() {
                 </div>
             </div>
 
-            {/* Game Rules & Objectives */}
-            <div className="max-w-7xl mx-auto px-6 py-20">
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-slate-900 mb-4">Rules & Objectives</h2>
-                    <div className="w-16 h-1 bg-emerald-500 mx-auto mb-6"></div>
-                    <p className="text-lg text-slate-600">Balancing action with education</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-8 shadow-lg border border-emerald-100">
-                    <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                        The main purpose is to deliver a fun and educational experience, where players eliminate zombies 
-                        while learning about environmental conservation. Each level presents unique obstacles and events 
-                        that players must navigate to stop the factory&apos;s pollution.
-                    </p>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Maintain boat health</strong> to avoid destruction</span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Stop the factory</strong> from further polluting the environment</span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Complete objectives</strong> within time limits</span>
+            {/* Early Prototype Video Section */}
+            <div className="bg-slate-50 py-20">
+                <div className="max-w-6xl mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-bold text-slate-900 mb-4">Early Prototype</h2>
+                        <div className="w-16 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                        <p className="text-lg text-slate-600">Where it all began</p>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-4">In-House Arduino Rig</h3>
+                            <p className="text-slate-700 leading-relaxed mb-4">
+                                Before upgrading to the professional Qubic QS-S25 platform, the project started with a
+                                custom-built Arduino-based motion rig. This early prototype was built in-house to explore
+                                how physical motion could be synchronized with the virtual experience.
+                            </p>
+                            <p className="text-slate-700 leading-relaxed">
+                                Working with this early rig laid the groundwork for understanding motion synchronization,
+                                servo control, and the engineering challenges that come with translating VR physics into
+                                real-world movement, knowledge that proved invaluable when integrating the final platform.
+                            </p>
+                        </div>
+                        <div className="flex justify-center">
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-[320px]" style={{aspectRatio: '9/16'}}>
+                                <iframe
+                                    className="absolute inset-0 w-full h-full"
+                                    src="https://drive.google.com/file/d/1MIAWmzKKcxzxCVqMLd_s7G7-Cv2kEoP0/preview"
+                                    title="Early prototype rig demo"
+                                    allow="autoplay"
+                                ></iframe>
                             </div>
                         </div>
-                        <div className="space-y-3">
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Eliminate zombies</strong> and mutated creatures</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Game Rules & Objectives */}
+            <div className="bg-white py-20">
+                <div className="max-w-7xl mx-auto px-6 py-20">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-bold text-slate-900 mb-4">Rules & Objectives</h2>
+                        <div className="w-16 h-1 bg-emerald-500 mx-auto mb-6"></div>
+                        <p className="text-lg text-slate-600">Balancing action with education</p>
+                    </div>
+
+                    <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-8 shadow-lg border border-emerald-100">
+                        <p className="text-lg text-slate-700 mb-6 leading-relaxed">
+                            The main purpose is to deliver a fun and educational experience, where players eliminate zombies 
+                            while learning about environmental conservation. Each level presents unique obstacles and events 
+                            that players must navigate to stop the factory&apos;s pollution.
+                        </p>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div className="space-y-3">
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                    <span className="text-slate-700"><strong>Maintain boat health</strong> to avoid destruction</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                    <span className="text-slate-700"><strong>Stop the factory</strong> from further polluting the environment</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                    <span className="text-slate-700"><strong>Complete objectives</strong> within time limits</span>
+                                </div>
                             </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Avoid harming</strong> native species</span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
-                                <span className="text-slate-700"><strong>Learn environmental facts</strong> throughout the journey</span>
+                            <div className="space-y-3">
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                    <span className="text-slate-700"><strong>Eliminate zombies</strong> and mutated creatures</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                    <span className="text-slate-700"><strong>Avoid harming</strong> native species</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" />
+                                    <span className="text-slate-700"><strong>Learn environmental facts</strong> throughout the journey</span>
+                                </div>
                             </div>
                         </div>
                     </div>
