@@ -133,9 +133,9 @@ const games = [
         youtubelink: "",
     },
     {
-        name: "Penguin Game",
+        name: "Penguins Peak",
         description: "A top down RPG where you play as a penguin, defending his icy home. Inspired by Link's Awakening.",
-        image: "/images/penguin/thumbnail.png",
+        image: "/images/penguin/thumbnail2.png",
         github: "",
         link: "/penguin",
         piclink: "/penguin",
