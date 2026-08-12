@@ -155,7 +155,7 @@ const AboutSection = () => {
                                     <span className="font-semibold text-slate-900">3D modeling/animation</span>.
                                 </p> */}
                                 <p>
-                                    Hello, I&#39;m Jared de Monteiro, a developer, technical artist, and animator from the San Francisco Bay Area. I am currently a senior at the University of Miami, studying Computer Science - Graphics & Game Design, Interactive Media, and Mathematics.
+                                    Hello, I&#39;m Jared de Monteiro, a developer, technical artist, and animator from the San Francisco Bay Area. I recently moved to Boston to become a full-time Software Engineer at Autonodyne!
                                 </p>
 
                                 <p>

@@ -145,6 +145,15 @@ import { Calendar, ExternalLink, MapPin } from "lucide-react";
 
 const jobs = [
     {
+        name: "Autonodyne",
+        title: "Software Engineer",
+        date: "August 2026 - Present",
+        location: "Boston, MA",
+        description: "",
+        pic: "/images/jobLogos/AutonodyneLogo.webp",
+        link: "https://www.autonodyne.com/",
+    },
+    {
         name: "Virtual Experiences Simulation Lab",
         title: "Lead Developer",
         date: "November 2023 - Present",
@@ -163,7 +172,7 @@ const jobs = [
                 </li>
             </ul>
             </>,
-        pic: "/images/vesl.png",
+        pic: "/images/jobLogos/vesl.png",
         link: "https://xr.miami.edu/labs/the-vesl/index.html",
     },
     {
@@ -185,7 +194,7 @@ const jobs = [
                 </li>
             </ul>
             </>,
-        pic: "/images/TMH.png",
+        pic: "/images/jobLogos/TMH.png",
         link: "https://themiamihurricane.com/",
     },
     {
@@ -207,7 +216,7 @@ const jobs = [
                     </li>
                 </ul>
             </>,
-        pic: "/images/origin.png",
+        pic: "/images/jobLogos/origin.png",
         link: "https://www.originpc.com/",
     },
     
@@ -230,7 +239,7 @@ const jobs = [
                     </li>
                 </ul>
             </>,
-        pic: "/images/ktplogo.png",
+        pic: "/images/jobLogos/ktplogo.png",
         link: "https://www.ktpmiami.com/",
     },
     {
@@ -255,7 +264,7 @@ const jobs = [
                     </li>
                 </ul>
             </>,
-        pic: "/images/idtechlogo.png",
+        pic: "/images/jobLogos/idtechlogo.png",
         link: "https://www.idtech.com/",
     },
 ];
